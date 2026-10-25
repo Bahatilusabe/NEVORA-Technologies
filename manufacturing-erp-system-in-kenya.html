@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore manufacturing ERP solutions in Kenya with NEVORA Technologies. Plan a connected system for production, inventory, procurement and business operations.">
+    <title>Manufacturing ERP Software in Kenya | NEVORA Technologies</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NEVORA Technologies">
+    <meta property="og:title" content="Manufacturing ERP Software in Kenya | NEVORA Technologies">
+    <meta property="og:description" content="Explore manufacturing ERP solutions in Kenya with NEVORA Technologies. Plan a connected system for production, inventory, procurement and business operations.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Manufacturing ERP Software in Kenya | NEVORA Technologies">
+    <meta name="twitter:description" content="Explore manufacturing ERP solutions in Kenya with NEVORA Technologies. Plan a connected system for production, inventory, procurement and business operations.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="shortcodes.css" type="text/css" media="all">
+    <link rel="stylesheet" href="skins/skyblue/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/nevora-site-chrome.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+    <style>
+        :root {
+            color-scheme: light;
+            --manufacturing-ink: #19334e;
+            --manufacturing-muted: #536980;
+            --manufacturing-blue: #167ba0;
+            --manufacturing-cyan: #70d8ed;
+            --manufacturing-paper: #f4f8fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body.manufacturing-page {
+            color: var(--manufacturing-muted);
+            font-family: "Open Sans", Arial, sans-serif;
+            margin: 0;
+        }
+
+        .manufacturing-hero {
+            background:
+                radial-gradient(circle at 88% 15%, rgba(91, 206, 231, .22), transparent 26%),
+                linear-gradient(120deg, #102c48 0%, #175278 58%, #1883a1 100%);
+            color: #fff;
+            overflow: hidden;
+            padding: clamp(58px, 8vw, 100px) 24px;
+            position: relative;
+        }
+
+        .manufacturing-hero::after {
+            border: 1px solid rgba(255, 255, 255, .18);
+            border-radius: 50%;
+            content: "";
+            height: 380px;
+            position: absolute;
+            right: -120px;
+            top: -200px;
+            width: 380px;
+        }
+
+        .manufacturing-hero-inner,
+        .manufacturing-content,
+        .manufacturing-footer-inner {
+            margin: 0 auto;
+            max-width: 1152px;
+            position: relative;
+        }
+
+        .manufacturing-eyebrow {
+            color: var(--manufacturing-cyan);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .16em;
+            margin: 0 0 14px;
+            text-transform: uppercase;
+        }
+
+        .manufacturing-hero h1 {
+            color: #fff;
+            font-size: clamp(38px, 6vw, 66px);
+            letter-spacing: -.045em;
+            line-height: 1.06;
+            margin: 0;
+            max-width: 800px;
+        }
+
+        .manufacturing-hero-copy {
+            color: rgba(255, 255, 255, .84);
+            font-size: clamp(16px, 2vw, 19px);
+            line-height: 1.8;
+            margin: 18px 0 0;
+            max-width: 720px;
+        }
+
+        .manufacturing-breadcrumb {
+            color: rgba(255, 255, 255, .76);
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 13px;
+            gap: 10px;
+            margin-top: 26px;
+        }
+
+        .manufacturing-breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .manufacturing-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .manufacturing-content {
+            padding: 58px 24px 70px;
+        }
+
+        .manufacturing-layout {
+            align-items: start;
+            display: grid;
+            gap: 32px;
+            grid-template-columns: minmax(230px, .72fr) minmax(0, 2fr);
+        }
+
+        .manufacturing-sidebar {
+            display: grid;
+            gap: 20px;
+        }
+
+        .manufacturing-sidebar-card {
+            background: #fff;
+            border: 1px solid #e2eaf1;
+            border-radius: 14px;
+            box-shadow: 0 10px 28px rgba(26, 48, 73, .06);
+            padding: 20px;
+        }
+
+        .manufacturing-sidebar-card h2 {
+            color: var(--manufacturing-ink);
+            font-size: 17px;
+            line-height: 1.4;
+            margin: 0 0 14px;
+        }
+
+        .manufacturing-service-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .manufacturing-service-list li {
+            border-bottom: 1px solid #e8eef4;
+            display: grid;
+            gap: 12px;
+            grid-template-columns: 74px minmax(0, 1fr);
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .manufacturing-service-list li:first-child {
+            padding-top: 0;
+        }
+
+        .manufacturing-service-list li:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .manufacturing-service-thumb {
+            border-radius: 9px;
+            display: block;
+            height: 72px;
+            overflow: hidden;
+            width: 74px;
+        }
+
+        .manufacturing-service-thumb img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .manufacturing-service-list h3 {
+            font-size: 13px;
+            line-height: 1.45;
+            margin: 0 0 6px;
+        }
+
+        .manufacturing-service-list h3 a {
+            color: #314a65;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .manufacturing-service-list h3 a:hover,
+        .manufacturing-service-list h3 a:focus-visible {
+            color: var(--manufacturing-blue);
+        }
+
+        .manufacturing-service-list .manufacturing-service-read-more {
+            color: var(--manufacturing-blue);
+            font-size: 12px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .manufacturing-service-list .manufacturing-service-read-more:hover,
+        .manufacturing-service-list .manufacturing-service-read-more:focus-visible {
+            text-decoration: underline;
+        }
+
+        .manufacturing-sidebar-links a {
+            color: var(--manufacturing-muted);
+            font-size: 13px;
+            line-height: 1.5;
+            text-decoration: none;
+        }
+
+        .manufacturing-sidebar-links a:hover,
+        .manufacturing-sidebar-links a:focus-visible {
+            color: var(--manufacturing-blue);
+            text-decoration: underline;
+        }
+
+        .manufacturing-sidebar-card p {
+            font-size: 13px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .manufacturing-sidebar-contact {
+            background: linear-gradient(145deg, #102b48, #164f78);
+            border: 0;
+            color: rgba(255, 255, 255, .8);
+        }
+
+        .manufacturing-sidebar-contact h2 {
+            color: #fff;
+        }
+
+        .manufacturing-sidebar-contact a {
+            color: #8ce2f4;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 12px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 959px) {
+            .manufacturing-page #dt-menu-toggle {
+                background: #167ba0;
+                border-radius: 6px;
+                display: block;
+                margin: 8px 0;
+            }
+
+            .manufacturing-page #main-menu.is-open > ul.menu {
+                display: block;
+            }
+        }
+
+        .manufacturing-main {
+            min-width: 0;
+        }
+
+        .manufacturing-intro {
+            align-items: center;
+            display: grid;
+            gap: clamp(28px, 5vw, 64px);
+            grid-template-columns: minmax(0, 1fr) minmax(260px, .83fr);
+        }
+
+        .manufacturing-intro h2,
+        .manufacturing-section h2 {
+            color: var(--manufacturing-ink);
+            font-size: clamp(27px, 3.5vw, 38px);
+            letter-spacing: -.03em;
+            line-height: 1.2;
+            margin: 0 0 16px;
+        }
+
+        .manufacturing-intro p,
+        .manufacturing-section > p {
+            font-size: 15px;
+            line-height: 1.85;
+            margin: 0 0 15px;
+        }
+
+        .manufacturing-image {
+            background: #eaf2f7;
+            border-radius: 18px;
+            box-shadow: 0 18px 44px rgba(26, 48, 73, .15);
+            display: block;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            width: 100%;
+        }
+
+        .manufacturing-section {
+            margin-top: 70px;
+        }
+
+        .manufacturing-section-heading {
+            margin-bottom: 24px;
+            max-width: 740px;
+        }
+
+        .manufacturing-feature-grid {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .manufacturing-feature {
+            background: #fff;
+            border: 1px solid #e2eaf1;
+            border-radius: 14px;
+            box-shadow: 0 10px 28px rgba(26, 48, 73, .05);
+            padding: 22px;
+        }
+
+        .manufacturing-feature-number {
+            align-items: center;
+            background: #e6f7fb;
+            border-radius: 50%;
+            color: var(--manufacturing-blue);
+            display: inline-flex;
+            font-size: 12px;
+            font-weight: 700;
+            height: 36px;
+            justify-content: center;
+            margin-bottom: 15px;
+            width: 36px;
+        }
+
+        .manufacturing-feature h3 {
+            color: var(--manufacturing-ink);
+            font-size: 17px;
+            line-height: 1.4;
+            margin: 0 0 9px;
+        }
+
+        .manufacturing-feature p {
+            font-size: 13px;
+            line-height: 1.75;
+            margin: 0;
+        }
+
+        .manufacturing-process {
+            background: var(--manufacturing-paper);
+            border: 1px solid #e3edf3;
+            border-radius: 18px;
+            margin-top: 60px;
+            padding: clamp(24px, 5vw, 44px);
+        }
+
+        .manufacturing-process ol {
+            counter-reset: manufacturing-steps;
+            display: grid;
+            gap: 22px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            list-style: none;
+            margin: 24px 0 0;
+            padding: 0;
+        }
+
+        .manufacturing-process li {
+            border-top: 2px solid #9adfed;
+            color: var(--manufacturing-muted);
+            font-size: 14px;
+            line-height: 1.75;
+            padding-top: 15px;
+        }
+
+        .manufacturing-process li strong {
+            color: var(--manufacturing-ink);
+            display: block;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .manufacturing-cta {
+            align-items: center;
+            background: linear-gradient(140deg, #102c48, #18577e);
+            border-radius: 18px;
+            color: #fff;
+            display: flex;
+            gap: 24px;
+            justify-content: space-between;
+            margin-top: 60px;
+            padding: clamp(26px, 5vw, 42px);
+        }
+
+        .manufacturing-cta h2 {
+            color: #fff;
+            font-size: clamp(24px, 3vw, 32px);
+            margin: 0 0 9px;
+        }
+
+        .manufacturing-cta p {
+            color: rgba(255, 255, 255, .78);
+            line-height: 1.7;
+            margin: 0;
+            max-width: 680px;
+        }
+
+        .manufacturing-cta-link {
+            background: #fff;
+            border-radius: 999px;
+            color: #145275;
+            flex: 0 0 auto;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .manufacturing-cta-link:hover,
+        .manufacturing-cta-link:focus-visible {
+            background: #dff7ff;
+            color: #145275;
+        }
+
+        @media (max-width: 760px) {
+            .manufacturing-layout {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .manufacturing-sidebar {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .manufacturing-intro {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .manufacturing-image {
+                max-height: 390px;
+                object-fit: cover;
+            }
+
+            .manufacturing-feature-grid,
+            .manufacturing-process ol {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 520px) {
+            .manufacturing-content {
+                padding: 40px 18px 52px;
+            }
+
+            .manufacturing-sidebar {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .manufacturing-feature-grid,
+            .manufacturing-process ol {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .manufacturing-cta {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="manufacturing-page">
+    <div id="header-wrapper">
+        <header class="header nevora-site-header">
+            <div class="container">
+                <div id="logo">
+                    <a href="index.html" title="NEVORA Technologies">
+                        <img src="images/logo@2x.webp" alt="NEVORA Technologies">
+                    </a>
+                </div>
+                <div id="menu-container">
+                    <nav id="main-menu" aria-label="Main navigation">
+                        <button id="dt-menu-toggle" class="dt-menu-toggle" type="button" aria-expanded="false" aria-controls="manufacturing-main-menu">
+                            Menu <span class="dt-menu-toggle-icon" aria-hidden="true"></span>
+                        </button>
+                        <ul class="menu" id="manufacturing-main-menu">
+                            <li class="menu-item-simple-parent"><a href="index.html">Home</a></li>
+                            <li class="menu-item-simple-parent"><a href="about-us.html">The Company</a></li>
+                            <li class="current_page_item menu-item-simple-parent"><a href="software-solutions.html">Our Services</a></li>
+                            <li class="menu-item-simple-parent"><a href="our-clients.html">Our Clients</a></li>
+                            <li class="menu-item-simple-parent"><a href="client-testimonial.html">Client Testimonials</a></li>
+                            <li class="menu-item-simple-parent"><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section class="manufacturing-hero">
+            <div class="manufacturing-hero-inner">
+                <p class="manufacturing-eyebrow">Manufacturing ERP | Kenya</p>
+                <h1>Bring your manufacturing operations into sync.</h1>
+                <p class="manufacturing-hero-copy">Plan a connected business system around your production workflows—from materials and purchasing to stock visibility, order coordination and operational reporting.</p>
+                <nav class="manufacturing-breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a><span aria-hidden="true">/</span>
+                    <a href="software-solutions.html">Software Solutions</a><span aria-hidden="true">/</span>
+                    <span aria-current="page">Manufacturing ERP</span>
+                </nav>
+            </div>
+        </section>
+
+        <div class="manufacturing-content">
+            <div class="manufacturing-layout">
+                <aside class="manufacturing-sidebar" aria-label="Related services">
+                    <section class="manufacturing-sidebar-card">
+                        <h2>Our software services</h2>
+                        <ul class="manufacturing-service-list">
+                            <li>
+                                <a class="manufacturing-service-thumb" href="software-solutions.html" aria-label="Custom software development">
+                                    <img src="images/software-development-companies-in-kenya.jpg" alt="" loading="lazy">
+                                </a>
+                                <div>
+                                    <h3><a href="software-solutions.html">Custom software development for your business</a></h3>
+                                    <a class="manufacturing-service-read-more" href="software-solutions.html">Read More <span aria-hidden="true">→</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="manufacturing-service-thumb" href="erp-implementations.html" aria-label="ERP implementation">
+                                    <img src="images/erp-software-in-kenya.jpg" alt="" loading="lazy">
+                                </a>
+                                <div>
+                                    <h3><a href="erp-implementations.html">ERP implementation and business process support</a></h3>
+                                    <a class="manufacturing-service-read-more" href="erp-implementations.html">Read More <span aria-hidden="true">→</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="manufacturing-service-thumb" href="hotel-management-system-in-kenya.html" aria-label="Hotel management system">
+                                    <img src="images/hotel-management-software-in-kenya.jpg" alt="" loading="lazy">
+                                </a>
+                                <div>
+                                    <h3><a href="hotel-management-system-in-kenya.html">Hotel management system for hospitality teams</a></h3>
+                                    <a class="manufacturing-service-read-more" href="hotel-management-system-in-kenya.html">Read More <span aria-hidden="true">→</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="manufacturing-service-thumb" href="mobile-app-development-company-in-kenya.html" aria-label="Mobile application development">
+                                    <img src="images/mobile-applications.jpg" alt="" loading="lazy">
+                                </a>
+                                <div>
+                                    <h3><a href="mobile-app-development-company-in-kenya.html">Mobile application development</a></h3>
+                                    <a class="manufacturing-service-read-more" href="mobile-app-development-company-in-kenya.html">Read More <span aria-hidden="true">→</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="manufacturing-sidebar-card manufacturing-sidebar-contact">
+                        <h2>Planning an ERP project?</h2>
+                        <p>Tell us about your production workflows and goals. We’ll help you explore a practical next step.</p>
+                        <a href="contact.html">Talk with our team <span aria-hidden="true">→</span></a>
+                    </section>
+                </aside>
+
+                <div class="manufacturing-main">
+                    <section class="manufacturing-intro" aria-labelledby="manufacturing-intro-title">
+                        <div>
+                            <p class="manufacturing-eyebrow" style="color:#167ba0">Built around your operation</p>
+                            <h2 id="manufacturing-intro-title">A clearer view of the work behind every order.</h2>
+                            <p>Manufacturing teams rely on many connected activities: purchasing the right materials, planning production, tracking stock and fulfilling customer orders. When information is scattered across manual processes, it becomes harder to see what is ready, what needs attention and where delays may arise.</p>
+                            <p>NEVORA works with your team to understand how your business runs and shape an ERP solution around its priorities. The system scope is defined with you, so the workflows and reporting fit your operation rather than forcing your people into a one-size-fits-all process.</p>
+                        </div>
+                        <img class="manufacturing-image" src="images/kenya-manufacturing-software.jpg" alt="Software team planning a digital system for business operations" fetchpriority="high">
+                    </section>
+
+                    <section class="manufacturing-section" aria-labelledby="manufacturing-capabilities-title">
+                        <div class="manufacturing-section-heading">
+                            <p class="manufacturing-eyebrow" style="color:#167ba0">What we can plan together</p>
+                            <h2 id="manufacturing-capabilities-title">Connect the workflows that keep production moving.</h2>
+                            <p>Capabilities are scoped to your business processes, products and operating model. A manufacturing ERP implementation may bring together areas such as:</p>
+                        </div>
+                        <div class="manufacturing-feature-grid">
+                    <article class="manufacturing-feature">
+                        <span class="manufacturing-feature-number">01</span>
+                        <h3>Production planning</h3>
+                        <p>Coordinate jobs, schedules and operational priorities with a clearer view of planned work.</p>
+                    </article>
+                    <article class="manufacturing-feature">
+                        <span class="manufacturing-feature-number">02</span>
+                        <h3>Materials and inventory</h3>
+                        <p>Connect purchasing and stock processes to help teams understand material availability and movement.</p>
+                    </article>
+                    <article class="manufacturing-feature">
+                        <span class="manufacturing-feature-number">03</span>
+                        <h3>Orders and fulfilment</h3>
+                        <p>Improve coordination between customer orders, production activity and delivery workflows.</p>
+                    </article>
+                    <article class="manufacturing-feature">
+                        <span class="manufacturing-feature-number">04</span>
+                        <h3>Cost and operational visibility</h3>
+                        <p>Bring relevant operational information together to support better-informed business decisions.</p>
+                    </article>
+                    <article class="manufacturing-feature">
+                        <span class="manufacturing-feature-number">05</span>
+                        <h3>Quality and process checks</h3>
+                        <p>Map the checks and approvals that matter to your production process into agreed workflows.</p>
+                    </article>
+                    <article class="manufacturing-feature">
+                        <span class="manufacturing-feature-number">06</span>
+                        <h3>Business-wide reporting</h3>
+                        <p>Give teams and decision-makers a more connected view of the measures they need to monitor.</p>
+                    </article>
+                        </div>
+                    </section>
+
+                    <section class="manufacturing-process" aria-labelledby="manufacturing-process-title">
+                        <p class="manufacturing-eyebrow" style="color:#167ba0">From discovery to ongoing improvement</p>
+                        <h2 id="manufacturing-process-title">A practical path to implementation.</h2>
+                        <ol>
+                    <li><strong>Understand your processes</strong>We learn how your teams work today and identify the priorities for the system.</li>
+                    <li><strong>Plan and configure</strong>We agree the workflows, requirements and rollout approach before configuring the solution.</li>
+                    <li><strong>Test, train and refine</strong>We support validation and team readiness, then identify improvements after go-live.</li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+
+            <section class="manufacturing-cta" aria-labelledby="manufacturing-cta-title">
+                <div>
+                    <h2 id="manufacturing-cta-title">Let’s talk about your production workflows.</h2>
+                    <p>Share your manufacturing goals and the processes you want to connect. We’ll help you explore a practical ERP approach for your business.</p>
+                </div>
+                <a class="manufacturing-cta-link" href="contact.html?service=Manufacturing%20ERP#contact-form">Discuss your project <span aria-hidden="true">→</span></a>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-widgets-wrapper">
+            <div class="container">
+                <div class="column dt-sc-one-fourth first">
+                    <aside class="widget widget_text nevora-footer-contact">
+                        <h3 class="widget-title">Contact <span class="wlast">Us</span><span class="small-line"></span></h3>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i><span><strong>Phone:</strong> <a href="tel:+254769101739">+254 769 101 739</a></span></p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i><span><strong>Email:</strong> <a href="mailto:bahatilusabe@gmail.com">bahatilusabe@gmail.com</a></span></p>
+                        <p><i class="fa fa-globe" aria-hidden="true"></i><span><strong>Website:</strong> <a href="https://www.nevora.tech/">www.nevora.tech</a></span></p>
+                        <p><i class="fa fa-location-arrow" aria-hidden="true"></i><span><strong>Location:</strong> Kenya<br><strong>Markets:</strong> Kenya and international</span></p>
+                    </aside>
+                </div>
+                <div class="column dt-sc-one-fourth">
+                    <aside class="widget widget_text">
+                        <h3 class="widget-title">Manufacturing <span class="wlast">ERP</span><span class="small-line"></span></h3>
+                        <p class="nevora-footer-intro">Connected systems for production planning, inventory, orders and business operations.</p>
+                    </aside>
+                </div>
+                <div class="column dt-sc-one-fourth">
+                    <aside class="widget widget_text">
+                        <h3 class="widget-title">Explore <span class="wlast">NEVORA</span><span class="small-line"></span></h3>
+                        <ul class="nevora-sidebar-links">
+                            <li><a href="software-solutions.html">Software Solutions</a></li>
+                            <li><a href="erp-implementations.html">ERP Implementations</a></li>
+                            <li><a href="our-clients.html">Our Clients</a></li>
+                            <li><a href="client-testimonial.html">Client Testimonials</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="column dt-sc-one-fourth">
+                    <aside class="widget widget_text">
+                        <h3 class="widget-title">Let’s <span class="wlast">Connect</span><span class="small-line"></span></h3>
+                        <p class="nevora-footer-intro">Talk to our team about manufacturing workflows and an ERP implementation shaped around your goals.</p>
+                        <p><a href="contact.html?service=Manufacturing%20ERP#contact-form">Start an enquiry</a></p>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>NEVORA Technologies, &copy;2026. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a> |</li>
+                    <li><a href="about-us.html">About</a> |</li>
+                    <li><a href="software-solutions.html">Software</a> |</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const manufacturingMenuToggle = document.getElementById("dt-menu-toggle");
+        const manufacturingMainMenu = document.getElementById("main-menu");
+
+        manufacturingMenuToggle.addEventListener("click", () => {
+            const isExpanded = manufacturingMenuToggle.getAttribute("aria-expanded") === "true";
+            manufacturingMenuToggle.setAttribute("aria-expanded", String(!isExpanded));
+            manufacturingMainMenu.classList.toggle("is-open", !isExpanded);
+        });
+    </script>
+    <script src="js/nevora-whatsapp.js"></script>
+</body>
+</html>

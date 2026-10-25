@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore NEVORA Technologies client projects and digital solutions created for organizations across industries.">
+    <title>Our Clients | NEVORA Technologies</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NEVORA Technologies">
+    <meta property="og:title" content="Our Clients | NEVORA Technologies">
+    <meta property="og:description" content="Explore NEVORA Technologies client projects and digital solutions created for organizations across industries.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Our Clients | NEVORA Technologies">
+    <meta name="twitter:description" content="Explore NEVORA Technologies client projects and digital solutions created for organizations across industries.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skins/skyblue/style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/nevora-site-chrome.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+        body.nevora-clients-page {
+            background: #03152a;
+            color: #d6e6f6;
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
+
+        .nevora-clients-page #main {
+            background: #03152a;
+            color: #d6e6f6;
+        }
+
+        .nevora-clients-page .container {
+            box-sizing: border-box;
+        }
+
+        .nevora-clients-page .current_page_item > a {
+            color: #20baff;
+        }
+
+        .nevora-clients-page #footer .copyright p {
+            color: #a6adb5;
+        }
+
+        .clients-hero {
+            background:
+                radial-gradient(ellipse at 75% 50%, rgba(0, 132, 255, .18), transparent 34%),
+                linear-gradient(105deg, #03152a 0%, #041c36 60%, #052345 100%);
+            border-bottom: 1px solid rgba(31, 164, 255, .24);
+            min-height: 370px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .clients-hero::before {
+            background:
+                linear-gradient(rgba(16, 114, 188, .1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(16, 114, 188, .1) 1px, transparent 1px);
+            background-size: 44px 44px;
+            content: "";
+            inset: 0 0 0 53%;
+            mask-image: linear-gradient(90deg, transparent, #000 55%);
+            opacity: .45;
+            position: absolute;
+        }
+
+        .clients-hero .container {
+            align-items: center;
+            display: grid;
+            gap: 36px;
+            grid-template-columns: minmax(0, 1.18fr) minmax(300px, .82fr);
+            min-height: 370px;
+            padding-bottom: 54px;
+            padding-top: 54px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .clients-hero-copy {
+            max-width: 620px;
+        }
+
+        .clients-eyebrow,
+        .clients-section-kicker {
+            color: #10b9ff;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: .2em;
+            margin: 0 0 12px;
+            text-transform: uppercase;
+        }
+
+        .clients-hero h1 {
+            color: #f5f9ff;
+            font-size: clamp(36px, 3.8vw, 50px);
+            font-weight: 800;
+            letter-spacing: -.045em;
+            line-height: 1.08;
+            margin: 0;
+        }
+
+        .clients-hero h1 span {
+            color: #12aaff;
+            display: block;
+        }
+
+        .clients-hero-copy > p:not(.clients-eyebrow) {
+            color: #b8cce0;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 17px 0 0;
+            max-width: 540px;
+        }
+
+        .clients-hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .clients-button {
+            align-items: center;
+            border: 1px solid #109eea;
+            border-radius: 999px;
+            display: inline-flex;
+            font-size: 13px;
+            font-weight: 700;
+            gap: 10px;
+            justify-content: center;
+            min-height: 44px;
+            padding: 0 20px;
+            text-decoration: none;
+            transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+        }
+
+        .clients-button-primary {
+            background: #079eea;
+            color: #fff;
+        }
+
+        .clients-button-secondary {
+            background: rgba(2, 21, 42, .55);
+            color: #d8e9f8;
+        }
+
+        .clients-button:hover {
+            background: #087fc4;
+            border-color: #36c4ff;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .clients-hero-art {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            min-height: 260px;
+            position: relative;
+        }
+
+        .clients-hero-art::before,
+        .clients-hero-art::after {
+            border: 1px solid rgba(0, 162, 255, .22);
+            border-radius: 50%;
+            content: "";
+            height: 260px;
+            position: absolute;
+            width: 260px;
+        }
+
+        .clients-hero-art::after {
+            height: 330px;
+            width: 330px;
+        }
+
+        .clients-hero-image {
+            border: 1px solid rgba(35, 163, 255, .45);
+            border-radius: 15px;
+            box-shadow: 0 28px 75px rgba(0, 0, 0, .4), 0 0 45px rgba(0, 129, 255, .18);
+            max-height: 285px;
+            max-width: 100%;
+            object-fit: cover;
+            position: relative;
+            transform: perspective(900px) rotateY(-7deg) rotateX(2deg);
+            z-index: 1;
+        }
+
+        .clients-section {
+            border-bottom: 1px solid rgba(40, 133, 203, .2);
+            padding: 48px 0;
+        }
+
+        .clients-section .container {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        .clients-section-heading {
+            margin-bottom: 22px;
+            max-width: 710px;
+        }
+
+        .clients-section-kicker {
+            margin-bottom: 7px;
+        }
+
+        .clients-section-heading h2 {
+            color: #f1f7ff;
+            font-size: clamp(25px, 3vw, 34px);
+            letter-spacing: -.025em;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .clients-section-heading > p:last-child {
+            color: #a9bfd5;
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 9px 0 0;
+        }
+
+        .clients-ecosystem {
+            background: #03152a;
+        }
+
+        .clients-tech-grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+
+        .clients-tech-item {
+            align-items: center;
+            background: linear-gradient(145deg, rgba(4, 29, 56, .9), rgba(3, 22, 43, .96));
+            border: 1px solid rgba(35, 129, 198, .36);
+            border-radius: 8px;
+            color: #d5e9fb;
+            display: flex;
+            flex-direction: column;
+            font-size: 13px;
+            font-weight: 600;
+            gap: 10px;
+            justify-content: center;
+            min-height: 88px;
+            text-align: center;
+            transition: border-color 180ms ease, transform 180ms ease;
+        }
+
+        .clients-tech-item:hover {
+            border-color: #129fea;
+            transform: translateY(-3px);
+        }
+
+        .clients-tech-mark {
+            align-items: center;
+            background: #fff;
+            border: 1px solid rgba(37, 172, 255, .25);
+            border-radius: 9px;
+            display: inline-flex;
+            height: 42px;
+            justify-content: center;
+            overflow: hidden;
+            padding: 5px;
+            width: 42px;
+        }
+
+        .clients-tech-mark img {
+            display: block;
+            height: 100%;
+            object-fit: contain;
+            width: 100%;
+        }
+
+        .clients-tech-caption {
+            align-items: center;
+            color: #89a9c8;
+            display: flex;
+            font-size: 12px;
+            gap: 16px;
+            justify-content: center;
+            margin: 18px auto 0;
+            text-align: center;
+        }
+
+        .clients-tech-caption::before,
+        .clients-tech-caption::after {
+            background: #087eb9;
+            content: "";
+            height: 1px;
+            max-width: 90px;
+            width: 15%;
+        }
+
+        .clients-projects {
+            background: linear-gradient(180deg, #041a33, #03152a);
+        }
+
+        .clients-projects-heading {
+            align-items: flex-end;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .clients-projects-heading .clients-section-heading {
+            margin-bottom: 0;
+        }
+
+        .clients-projects-link {
+            border: 1px solid #087dbb;
+            border-radius: 999px;
+            color: #c5e4fa;
+            flex: 0 0 auto;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 3px;
+            padding: 9px 15px;
+            text-decoration: none;
+        }
+
+        .clients-projects-link:hover {
+            background: #087dbb;
+            color: #fff;
+        }
+
+        .clients-project-grid {
+            display: grid;
+            gap: 18px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            margin-top: 24px;
+        }
+
+        .clients-project-card {
+            background: linear-gradient(160deg, rgba(4, 29, 56, .98), rgba(2, 19, 38, .98));
+            border: 1px solid rgba(35, 129, 198, .4);
+            border-radius: 10px;
+            min-width: 0;
+            overflow: hidden;
+            transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+        }
+
+        .clients-project-card:hover {
+            border-color: rgba(23, 176, 255, .8);
+            box-shadow: 0 16px 34px rgba(0, 0, 0, .28);
+            transform: translateY(-4px);
+        }
+
+        .clients-project-image-wrap {
+            aspect-ratio: 3 / 2;
+            background:
+                radial-gradient(ellipse at 50% 45%, rgba(12, 107, 175, .24), transparent 65%),
+                #06172b;
+            box-sizing: border-box;
+            display: grid;
+            overflow: hidden;
+            padding: 12px;
+            position: relative;
+            isolation: isolate;
+        }
+
+        .clients-project-image-wrap::before {
+            background-image: var(--project-art);
+            background-position: center;
+            background-size: cover;
+            content: "";
+            filter: blur(24px);
+            inset: -12px;
+            opacity: .34;
+            position: absolute;
+            transform: scale(1.08);
+            z-index: -1;
+        }
+
+        .clients-project-image-wrap::after {
+            background: linear-gradient(140deg, rgba(14, 134, 211, .14), transparent 42%, rgba(0, 7, 18, .18));
+            content: "";
+            inset: 0;
+            pointer-events: none;
+            position: absolute;
+        }
+
+        .clients-project-image {
+            display: block;
+            height: auto;
+            max-height: 100%;
+            object-fit: contain;
+            place-self: center;
+            position: relative;
+            width: 100%;
+            z-index: 1;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, .3));
+            transition: filter 220ms ease, transform 220ms ease;
+        }
+
+        .clients-project-card:hover .clients-project-image {
+            filter: drop-shadow(0 14px 24px rgba(0, 0, 0, .4));
+            transform: scale(1.025);
+        }
+
+        .clients-project-card:focus-within .clients-project-image {
+            filter: drop-shadow(0 14px 24px rgba(0, 0, 0, .4));
+        }
+
+        .clients-project-image-wrap img {
+            min-width: 0;
+            width: 100%;
+        }
+
+        .clients-project-content {
+            padding: 15px 15px 16px;
+        }
+
+        .clients-project-meta {
+            align-items: center;
+            color: #8eafce;
+            display: flex;
+            font-size: 10px;
+            font-weight: 700;
+            justify-content: space-between;
+            letter-spacing: .04em;
+            margin-bottom: 9px;
+            text-transform: uppercase;
+        }
+
+        .clients-project-status {
+            background: rgba(0, 196, 126, .13);
+            border: 1px solid rgba(0, 205, 143, .25);
+            border-radius: 999px;
+            color: #4ce0b1;
+            letter-spacing: 0;
+            padding: 4px 8px;
+            text-transform: none;
+        }
+
+        .clients-project-status-progress {
+            background: rgba(18, 154, 255, .12);
+            border-color: rgba(18, 154, 255, .3);
+            color: #57bdff;
+        }
+
+        .clients-project-status-planning {
+            background: rgba(129, 156, 194, .12);
+            border-color: rgba(129, 156, 194, .24);
+            color: #b4c9e1;
+        }
+
+        .clients-project-content h3 {
+            color: #edf6ff;
+            font-size: 17px;
+            line-height: 1.35;
+            margin: 0 0 7px;
+        }
+
+        .clients-project-content > p {
+            color: #a8bfd5;
+            font-size: 12px;
+            line-height: 1.65;
+            margin: 0;
+            min-height: 60px;
+        }
+
+        .clients-project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            list-style: none;
+            margin: 12px 0 0;
+            padding: 0;
+        }
+
+        .clients-project-tags li {
+            background: rgba(44, 105, 158, .25);
+            border-radius: 999px;
+            color: #a9cdeb;
+            font-size: 10px;
+            line-height: 1;
+            padding: 6px 9px;
+        }
+
+        .clients-testimonials {
+            background: #03152a;
+        }
+
+        .clients-testimonial-grid {
+            display: grid;
+            gap: 18px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .clients-testimonial-card {
+            background: linear-gradient(145deg, rgba(4, 29, 56, .98), rgba(2, 19, 38, .98));
+            border: 1px solid rgba(25, 143, 220, .48);
+            border-radius: 11px;
+            padding: 22px;
+        }
+
+        .clients-testimonial-quote-mark {
+            color: #11baff;
+            font-family: Georgia, serif;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: .8;
+        }
+
+        .clients-testimonial-card blockquote {
+            border: 0;
+            color: #c4d7e9;
+            font-size: 13px;
+            font-style: normal;
+            line-height: 1.75;
+            margin: 7px 0 18px;
+            padding: 0;
+        }
+
+        .clients-testimonial-attribution {
+            align-items: center;
+            border-top: 1px solid rgba(58, 125, 176, .28);
+            display: flex;
+            gap: 11px;
+            padding-top: 14px;
+        }
+
+        .clients-testimonial-initial {
+            align-items: center;
+            background: #0b5e99;
+            border: 1px solid rgba(83, 191, 255, .35);
+            border-radius: 50%;
+            color: #eaf7ff;
+            display: inline-flex;
+            flex: 0 0 36px;
+            font-size: 12px;
+            font-weight: 800;
+            height: 36px;
+            justify-content: center;
+        }
+
+        .clients-testimonial-attribution strong {
+            color: #e7f3ff;
+            display: block;
+            font-size: 12px;
+        }
+
+        .clients-testimonial-attribution span:last-child {
+            color: #91adca;
+            display: block;
+            font-size: 10px;
+            margin-top: 3px;
+        }
+
+        .clients-industries {
+            background: linear-gradient(180deg, #041a33, #03152a);
+        }
+
+        .clients-industry-grid {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: repeat(7, minmax(0, 1fr));
+        }
+
+        .clients-industry-card {
+            background: rgba(4, 29, 56, .8);
+            border: 1px solid rgba(35, 129, 198, .38);
+            border-radius: 9px;
+            min-height: 112px;
+            padding: 15px 10px;
+            text-align: center;
+        }
+
+        .clients-industry-icon {
+            align-items: center;
+            background: #fff;
+            border: 1px solid rgba(35, 129, 198, .32);
+            border-radius: 12px;
+            display: inline-flex;
+            height: 52px;
+            justify-content: center;
+            margin-bottom: 9px;
+            overflow: hidden;
+            padding: 4px;
+            width: 52px;
+        }
+
+        .clients-industry-icon img {
+            display: block;
+            height: 100%;
+            object-fit: contain;
+            width: 100%;
+        }
+
+        .clients-industry-card h3 {
+            color: #dcecff;
+            font-size: 11px;
+            line-height: 1.35;
+            margin: 0 0 5px;
+        }
+
+        .clients-industry-card p {
+            color: #90aac4;
+            font-size: 10px;
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        .clients-contact-section {
+            background: #03152a;
+            padding: 28px 0 38px;
+        }
+
+        .clients-contact-panel {
+            background:
+                radial-gradient(circle at 88% 52%, rgba(0, 145, 255, .18), transparent 25%),
+                linear-gradient(115deg, #041b35, #06264a);
+            border: 1px solid rgba(24, 164, 255, .65);
+            border-radius: 12px;
+            display: grid;
+            gap: 28px;
+            grid-template-columns: minmax(0, 1.15fr) minmax(240px, .85fr);
+            overflow: hidden;
+            padding: clamp(22px, 4vw, 36px);
+            position: relative;
+        }
+
+        .clients-contact-copy,
+        .clients-contact-details {
+            position: relative;
+            z-index: 1;
+        }
+
+        .clients-contact-copy .clients-section-kicker {
+            margin-bottom: 8px;
+        }
+
+        .clients-contact-copy h2 {
+            color: #f1f7ff;
+            font-size: clamp(25px, 3.3vw, 36px);
+            letter-spacing: -.03em;
+            line-height: 1.15;
+            margin: 0;
+            max-width: 540px;
+        }
+
+        .clients-contact-copy > p:not(.clients-section-kicker) {
+            color: #afc4d9;
+            font-size: 13px;
+            line-height: 1.7;
+            margin: 12px 0 18px;
+            max-width: 520px;
+        }
+
+        .clients-contact-details {
+            border-left: 1px solid rgba(63, 153, 214, .35);
+            padding-left: 24px;
+        }
+
+        .clients-contact-detail {
+            align-items: flex-start;
+            color: #b8d0e6;
+            display: flex;
+            font-size: 12px;
+            gap: 11px;
+            line-height: 1.55;
+            margin-bottom: 14px;
+        }
+
+        .clients-contact-detail:last-child {
+            margin-bottom: 0;
+        }
+
+        .clients-contact-detail > span:first-child {
+            color: #1abaff;
+            font-size: 15px;
+            width: 18px;
+        }
+
+        .clients-contact-detail strong {
+            color: #edf7ff;
+            display: block;
+            font-size: 11px;
+            margin-bottom: 2px;
+        }
+
+        .clients-contact-detail a {
+            color: #b8d0e6;
+            text-decoration: none;
+        }
+
+        .clients-contact-detail a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .clients-whatsapp {
+            align-items: center;
+            background: #25d366;
+            border-radius: 999px;
+            bottom: 22px;
+            box-shadow: 0 8px 22px rgba(13, 78, 43, .24);
+            color: #fff;
+            display: inline-flex;
+            font-size: 14px;
+            font-weight: 700;
+            gap: 10px;
+            padding: 13px 18px;
+            position: fixed;
+            right: 24px;
+            text-decoration: none;
+            transition: background 180ms ease, transform 180ms ease;
+            z-index: 1000;
+        }
+
+        .clients-whatsapp:hover,
+        .clients-whatsapp:focus-visible {
+            background: #1fbd5b;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .clients-whatsapp-mark {
+            align-items: center;
+            background: rgba(255, 255, 255, .2);
+            border: 1px solid rgba(255, 255, 255, .55);
+            border-radius: 50%;
+            display: inline-flex;
+            font-size: 10px;
+            height: 24px;
+            justify-content: center;
+            letter-spacing: -.04em;
+            width: 24px;
+        }
+
+        @media (max-width: 480px) {
+            .clients-whatsapp {
+                bottom: 16px;
+                right: 16px;
+            }
+        }
+
+        @media (max-width: 980px) {
+            .clients-hero .container {
+                grid-template-columns: minmax(0, 1fr) minmax(250px, .8fr);
+            }
+
+            .clients-tech-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .clients-project-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .clients-industry-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 680px) {
+            .clients-hero .container {
+                grid-template-columns: minmax(0, 1fr);
+                min-height: 0;
+                padding-bottom: 38px;
+                padding-top: 42px;
+            }
+
+            .clients-hero-art {
+                min-height: 190px;
+            }
+
+            .clients-hero-image {
+                max-height: 200px;
+                transform: none;
+            }
+
+            .clients-hero-art::before {
+                height: 190px;
+                width: 190px;
+            }
+
+            .clients-hero-art::after {
+                height: 250px;
+                width: 250px;
+            }
+
+            .clients-section {
+                padding: 38px 0;
+            }
+
+            .clients-projects-heading {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .clients-testimonial-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .clients-contact-panel {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .clients-contact-details {
+                border-left: 0;
+                border-top: 1px solid rgba(63, 153, 214, .35);
+                padding: 20px 0 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .clients-tech-grid {
+                gap: 9px;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .clients-project-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .clients-project-image-wrap {
+                padding: 10px;
+            }
+
+            .clients-industry-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body class="nevora-clients-page">
+    <div id="header-wrapper">
+                    <!-- **Header** -->
+                    <header class="header nevora-site-header">
+                        <div class="container">
+                            <!-- **Logo - End** -->
+                            <div id="logo">
+                                <a href="index.html" title="NEVORA Technologies">
+                                    <img src="images/logo@2x.webp" alt="NEVORA Technologies"/>
+                                </a>
+                            </div>
+                            <!-- **Logo - End** -->
+                            <div id="menu-container">
+                                <!-- **Nav - Starts**-->
+                                <nav id="main-menu">
+                                    <div id="dt-menu-toggle" class="dt-menu-toggle">
+                                        Menu
+                                <span class="dt-menu-toggle-icon"></span>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="menu-item-simple-parent">
+                                            <a href="index.html">Home</a>
+                                            <a class="dt-menu-expand">+</a>
+                                        </li>
+                                        <li class="menu-item-simple-parent">
+                                            <a href="about-us.html">The Company</a>
+                                        </li>
+                                        <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0">
+                                            <a href="#l">Our Services</a>
+                                            <div class="megamenu-child-container">
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item-with-widget-area">
+                                                        <a href="#">Design & Development</a>
+                                                        <br>
+                                                        <div class="menu-item-widget-area-container">
+                                                            <ul>
+                                                                <li class="widget widget_text">
+                                                                    <div class="textwidget">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="web-design-development.html">Web Development</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="ecommerce-website-design.html">eCommerce Web Development</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="web-maintenance.html">Web Maintenance Services</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="domain-hosting.html">Domain & Web Hosting</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="mobile-app-development-company-in-kenya.html">Mobile App Development</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="property-management-software-system-solution-in-kenya.html">Real Estate Property Management System</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item-with-widget-area">
+                                                        <a href="#">Software Solutions</a>
+                                                        <br>
+                                                        <div class="menu-item-widget-area-container">
+                                                            <ul>
+                                                                <li class="widget widget_text">
+                                                                    <div class="textwidget">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="software-solutions.html">Software Development</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="ai-automation-cybersecurity.html">AI, Automation &amp; Cybersecurity</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="manufacturing-erp-system-in-kenya.html">Manufacturing ERP System</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="wholesale-retail-and-distribution-software-in-kenya.html">Wholesale & Retail Software</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="hospital-management-system-in-kenya.html">Hospital Management System</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="hotel-management-system-in-kenya.html">Hotel Management System</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="school-management-system-in-kenya.html">School Management System </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="pharmacy-and-chemist-software-in-kenya.html">Pharmacy & Chemist Software</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="automated-customesd.html">Automated Custom ESD</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="erp-implementations.html">ERP Implementations</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item-with-widget-area">
+                                                        <a href="#">Corporate Identity</a>
+                                                        <br>
+                                                        <div class="menu-item-widget-area-container">
+                                                            <ul>
+                                                                <li class="widget widget_text">
+                                                                    <div class="textwidget">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="corporate-identity-design.html">Company Branding</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="radio-and-tv-advertisement-in-kenya.html">Advertising Agency</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="brochure-design.html">Company Brochure Design</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="print-advertising.html">Billboard Advertisement</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="logo-design.html">Company Logo Design</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item-with-widget-area">
+                                                        <a href="#">Online & Social Media</a>
+                                                        <br>
+                                                        <div class="menu-item-widget-area-container">
+                                                            <ul>
+                                                                <li class="widget widget_text">
+                                                                    <div class="textwidget">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="search-engine-optimization.html">Search Engine Optimization </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="email-marketing.html">Email Marketing</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="pay-per-click-marketing.html">Pay Per Click Marketing</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="social-media-marketing.html">Social Media Marketing</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="social-media-management-in-kenya.html">Social Media Management</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a class="dt-menu-expand">+</a>
+                                        </li>
+                                        <li class="current_page_item menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0">
+                                            <a href="our-clients.html">Our Clients</a>
+                                        </li>
+                                        <li class="menu-item-megamenu-parent megamenu-5-columns-group menu-item-depth-0">
+                                            <a href="client-testimonial.html">Client Testimonials</a>
+                                        </li>
+                                        <li class="menu-item-simple-parent">
+                                            <a href="contact.html">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- **Nav - End**-->
+                            </div>
+                        </div>
+                    </header>
+    </div>
+    <main id="main" class="nevora-clients-page">
+        <section class="clients-hero" aria-labelledby="clients-page-title">
+            <div class="container">
+                <div class="clients-hero-copy">
+                    <p class="clients-eyebrow">Clients &amp; partners</p>
+                    <h1 id="clients-page-title">Technology Partnerships <span>Built Around Your Goals.</span></h1>
+                    <p>We work with businesses, startups, and organizations to design, develop, and implement technology solutions that address real challenges and create opportunities for growth.</p>
+                    <div class="clients-hero-actions">
+                        <a class="clients-button clients-button-primary" href="contact.html">Work With Us <span aria-hidden="true">→</span></a>
+                        <a class="clients-button clients-button-secondary" href="#featured-projects">Explore Our Projects</a>
+                    </div>
+                </div>
+                <div class="clients-hero-art" aria-hidden="true">
+                    <img class="clients-hero-image" src="images/portfolio-images/image001.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="clients-section clients-ecosystem" aria-labelledby="technology-ecosystem-title">
+            <div class="container">
+                <div class="clients-section-heading">
+                    <p class="clients-section-kicker">Our trusted partners</p>
+                    <h2 id="technology-ecosystem-title">Technology Ecosystem</h2>
+                    <p>We collaborate with innovative companies, organizations, and communities to build solutions that make a difference.</p>
+                </div>
+                <div class="clients-tech-grid" aria-label="Tools and platforms in our development ecosystem">
+                    <div class="clients-tech-item"><span class="clients-tech-mark"><img src="images/client/microsoft.jpg" alt="" loading="lazy" decoding="async"></span><span>Microsoft</span></div>
+                    <div class="clients-tech-item"><span class="clients-tech-mark"><img src="images/client/googleclud.jpg" alt="" loading="lazy" decoding="async"></span><span>Google Cloud</span></div>
+                    <div class="clients-tech-item"><span class="clients-tech-mark"><img src="images/client/aws.png" alt="" loading="lazy" decoding="async"></span><span>AWS</span></div>
+                    <div class="clients-tech-item"><span class="clients-tech-mark"><img src="images/client/github.jpg" alt="" loading="lazy" decoding="async"></span><span>GitHub</span></div>
+                    <div class="clients-tech-item"><span class="clients-tech-mark"><img src="images/client/docker.jpg" alt="" loading="lazy" decoding="async"></span><span>Docker</span></div>
+                    <div class="clients-tech-item"><span class="clients-tech-mark"><img src="images/client/spostsqls.png" alt="" loading="lazy" decoding="async"></span><span>PostgreSQL</span></div>
+                </div>
+                <p class="clients-tech-caption">Tools and technologies we work with to build scalable, secure and modern solutions.</p>
+            </div>
+        </section>
+
+        <section class="clients-section clients-projects" id="featured-projects" aria-labelledby="featured-projects-title">
+            <div class="container">
+                <div class="clients-projects-heading">
+                    <div class="clients-section-heading">
+                        <p class="clients-section-kicker">Featured projects</p>
+                        <h2 id="featured-projects-title">Our Development Projects</h2>
+                        <p>From innovative platforms to custom systems, we build technology that solves real problems and drives business growth.</p>
+                    </div>
+                    <a class="clients-projects-link" href="index.html#recent-projects">View All Projects <span aria-hidden="true">→</span></a>
+                </div>
+
+                <div class="clients-project-grid">
+                    <article class="clients-project-card">
+                        <div class="clients-project-image-wrap" style="--project-art: url('images/portfolio-images/image002.webp')">
+                            <img class="clients-project-image" src="images/portfolio-images/image002.webp" alt="NEVIC telecom parts distributor platform with web dashboard and mobile view" loading="lazy">
+                        </div>
+                        <div class="clients-project-content">
+                            <div class="clients-project-meta"><span>SaaS platform</span><span class="clients-project-status">In Development</span></div>
+                            <h3>NEVIC — Telecommunications SaaS</h3>
+                            <p>A multi-tenant platform for telecommunications parts distributors, focused on inventory, sales, tenant management and operational workflows.</p>
+                            <ul class="clients-project-tags" aria-label="Technologies"><li>Next.js</li><li>PostgreSQL</li><li>TypeScript</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="clients-project-card">
+                        <div class="clients-project-image-wrap" style="--project-art: url('images/portfolio-images/image26.webp')">
+                            <img class="clients-project-image" src="images/portfolio-images/image26.webp" alt="Mavuno Green Grid agriculture platform on desktop and mobile" loading="lazy">
+                        </div>
+                        <div class="clients-project-content">
+                            <div class="clients-project-meta"><span>Web + mobile</span><span class="clients-project-status">In Development</span></div>
+                            <h3>Mavuno Green Grid</h3>
+                            <p>An agricultural and green-technology platform supporting farmers with transport, storage, market access and impact tracking.</p>
+                            <ul class="clients-project-tags" aria-label="Technologies"><li>Next.js</li><li>React Native</li><li>Node.js</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="clients-project-card">
+                        <div class="clients-project-image-wrap" style="--project-art: url('images/portfolio-images/image003.webp')">
+                            <img class="clients-project-image" src="images/portfolio-images/image003.webp" alt="KiliPlanner resident reporting and community planning platform" loading="lazy">
+                        </div>
+                        <div class="clients-project-content">
+                            <div class="clients-project-meta"><span>Web platform</span><span class="clients-project-status clients-project-status-progress">In Progress</span></div>
+                            <h3>KiliPlanner</h3>
+                            <p>A civic planning and resident reporting platform with privacy-preserving reports and community verification features.</p>
+                            <ul class="clients-project-tags" aria-label="Technologies"><li>Next.js</li><li>PostgreSQL</li><li>Mapbox</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="clients-project-card">
+                        <div class="clients-project-image-wrap" style="--project-art: url('images/portfolio-images/image004.webp')">
+                            <img class="clients-project-image" src="images/portfolio-images/image004.webp" alt="M-HUNTER verified rental listings and property management platform" loading="lazy">
+                        </div>
+                        <div class="clients-project-content">
+                            <div class="clients-project-meta"><span>Web platform</span><span class="clients-project-status clients-project-status-planning">Planning</span></div>
+                            <h3>M-HUNTER</h3>
+                            <p>A rental and property management platform with verified listings and tools for tenants, agents, landlords and administrators.</p>
+                            <ul class="clients-project-tags" aria-label="Technologies"><li>Next.js</li><li>Tailwind CSS</li><li>PostgreSQL</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="clients-project-card">
+                        <div class="clients-project-image-wrap" style="--project-art: url('images/portfolio-images/image2.webp')">
+                            <img class="clients-project-image" src="images/portfolio-images/image2.webp" alt="J.A.R.V.I.S. and AURA TITAN AI-assisted security monitoring dashboard" loading="lazy">
+                        </div>
+                        <div class="clients-project-content">
+                            <div class="clients-project-meta"><span>AI &amp; cybersecurity</span><span class="clients-project-status">In Development</span></div>
+                            <h3>J.A.R.V.I.S. / AURA TITAN</h3>
+                            <p>An AI-assisted security interface combining security monitoring, threat detection and intelligent interaction.</p>
+                            <ul class="clients-project-tags" aria-label="Technologies"><li>React</li><li>Node.js</li><li>Python</li></ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients-section clients-testimonials" aria-labelledby="clients-testimonials-title">
+            <div class="container">
+                <div class="clients-section-heading">
+                    <p class="clients-section-kicker">Client testimonials</p>
+                    <h2 id="clients-testimonials-title">What People Say</h2>
+                    <p>We value every partnership and take pride in the trust our clients place in us.</p>
+                </div>
+                <div class="clients-testimonial-grid">
+                    <article class="clients-testimonial-card">
+                        <div class="clients-testimonial-quote-mark" aria-hidden="true">“</div>
+                        <blockquote>NEVORA TECHNOLOGIES demonstrated a strong understanding of our business needs and helped us explore practical ways to improve our digital operations. Their focus on customized solutions, modern technology, and user experience gave us a clear vision for improving efficiency and serving our customers better.</blockquote>
+                        <div class="clients-testimonial-attribution">
+                            <span class="clients-testimonial-initial" aria-hidden="true">J</span>
+                            <div><strong>Josephine</strong><span>Protrade Kenya Ltd</span></div>
+                        </div>
+                    </article>
+                    <article class="clients-testimonial-card">
+                        <div class="clients-testimonial-quote-mark" aria-hidden="true">“</div>
+                        <blockquote>What stands out about NEVORA TECHNOLOGIES is its commitment to understanding the problem before proposing a solution. Their approach to software development, automation, and innovation reflects a forward-thinking mindset. We appreciate their professionalism and focus on building technology that supports business growth.</blockquote>
+                        <div class="clients-testimonial-attribution">
+                            <span class="clients-testimonial-initial" aria-hidden="true">P</span>
+                            <div><strong>Peter Kimani</strong><span>The Sawela Lodges</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients-section clients-industries" aria-labelledby="industries-title">
+            <div class="container">
+                <div class="clients-section-heading">
+                    <p class="clients-section-kicker">Industries we serve</p>
+                    <h2 id="industries-title">Who We Work With</h2>
+                    <p>We partner with businesses and organizations across different industries, delivering technology solutions that create real value.</p>
+                </div>
+                <div class="clients-industry-grid">
+                    <article class="clients-industry-card"><span class="clients-industry-icon"><img src="images/client/agriculture.jpg" alt="" loading="lazy" decoding="async"></span><h3>Agriculture</h3><p>Smarter farming, greater impact.</p></article>
+                    <article class="clients-industry-card"><span class="clients-industry-icon"><img src="images/client/telecommunication.jpg" alt="" loading="lazy" decoding="async"></span><h3>Telecommunications</h3><p>Connected solutions for a digital world.</p></article>
+                    <article class="clients-industry-card"><span class="clients-industry-icon"><img src="images/client/realestate.jpg" alt="" loading="lazy" decoding="async"></span><h3>Real Estate</h3><p>Property technology for better living.</p></article>
+                    <article class="clients-industry-card"><span class="clients-industry-icon"><img src="images/client/manufactuting.jpg" alt="" loading="lazy" decoding="async"></span><h3>Manufacturing</h3><p>Efficient systems, stronger production.</p></article>
+                    <article class="clients-industry-card"><span class="clients-industry-icon"><img src="images/client/education.jpg" alt="" loading="lazy" decoding="async"></span><h3>Education</h3><p>Better systems, healthier communities.</p></article>
+                    <article class="clients-industry-card"><span class="clients-industry-icon"><img src="images/client/healthcare.png" alt="" loading="lazy" decoding="async"></span><h3>Healthcare</h3><p>Connected care and information.</p></article>
+                    <article class="clients-industry-card"><span class="clients-industry-icon"><img src="images/client/others.jpg" alt="" loading="lazy" decoding="async"></span><h3>Other Industries</h3><p>Custom solutions for your sector.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients-contact-section" aria-labelledby="clients-contact-title">
+            <div class="container">
+                <div class="clients-contact-panel">
+                    <div class="clients-contact-copy">
+                        <p class="clients-section-kicker">Let’s build together</p>
+                        <h2 id="clients-contact-title">Your Business Could Be Our Next Success Story.</h2>
+                        <p>Tell us about your business challenge. Let’s explore how the right technology can help you move forward.</p>
+                        <div class="clients-hero-actions">
+                            <a class="clients-button clients-button-primary" href="contact.html">Start a Project <span aria-hidden="true">→</span></a>
+                            <a class="clients-button clients-button-secondary" href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="clients-contact-details">
+                        <div class="clients-contact-detail"><span aria-hidden="true">☎</span><div><strong>Phone</strong><a href="tel:+254769101739">+254 769 101 739</a></div></div>
+                        <div class="clients-contact-detail"><span aria-hidden="true">✉</span><div><strong>Email</strong><a href="mailto:bahatilusabe@gmail.com">bahatilusabe@gmail.com</a></div></div>
+                        <div class="clients-contact-detail"><span aria-hidden="true">⌖</span><div><strong>Location</strong><span>Kenya</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+                    <div class="footer-widgets-wrapper">
+                        <div class="container">
+                            <div class="column dt-sc-one-third first">
+                                <aside class="widget widget_text nevora-footer-contact">
+                                    <h3 class="widget-title">Contact <span class="wlast">Us</span><span class="small-line"></span></h3>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i><span><strong>Phone:</strong> <a href="tel:+254769101739">+254 769 101 739</a></span></p>
+                                    <p><i class="fa fa-envelope" aria-hidden="true"></i><span><strong>Email:</strong> <a href="mailto:bahatilusabe@gmail.com">bahatilusabe@gmail.com</a></span></p>
+                                    <p><i class="fa fa-globe" aria-hidden="true"></i><span><strong>Website:</strong> <a href="https://www.nevora.tech/">www.nevora.tech</a></span></p>
+                                    <p><i class="fa fa-location-arrow" aria-hidden="true"></i><span><strong>Location:</strong> Kenya<br><strong>Markets:</strong> Kenya and international</span></p>
+                                </aside>
+                            </div>
+                            <div class="column dt-sc-one-third">
+                                <aside class="widget widget_tweetbox nevora-footer-connect">
+                                    <h3 class="widget-title">Connect <span class="wlast">With Us</span><span class="small-line"></span></h3>
+                                    <p class="nevora-footer-intro">Follow NEVORA Technologies for project updates, technology insights, and company news.</p>
+                                    <ul class="nevora-social-channels" aria-label="Social channels">
+                                        <li><span class="fa fa-linkedin" aria-hidden="true"></span>LinkedIn</li>
+                                        <li><span class="fa fa-instagram" aria-hidden="true"></span>Instagram</li>
+                                        <li aria-label="X"><span class="nevora-x-icon" aria-hidden="true">X</span></li>
+                                    </ul>
+                                </aside>
+                            </div>
+                            <div class="column dt-sc-one-third">
+                                <aside class="widget mailchimp">
+                                    <h3 class="widget-title">Newsletter <span class="wlast">Subscription</span><span class="small-line"></span></h3>
+                                    <p>Stay connected for occasional updates about our projects, software innovations, technology insights, and digital solutions for growing businesses.</p>
+                                    <form method="post" class="mailchimp-form" name="frmNewsletter" action="mailto:bahatilusabe@gmail.com" enctype="text/plain">
+                                        <p><span class="fa fa-envelope"></span><input type="email" placeholder="Enter your email address" aria-label="Enter your email address" name="email" value="" required/><input type="submit" name="submit" class="dt-sc-button" value="Subscribe"/></p>
+                                    </form>
+                                    <p class="nevora-newsletter-note">Your email app will open to send your subscription request. We respect your privacy; you can unsubscribe at any time.</p>
+                                    <div id="ajax_newsletter_msg"></div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- **footer-widgets-wrapper - End** -->
+                    <div class="copyright">
+                        <div class="container">
+                            <p>NEVORA Technologies, &copy;2026. All rights reserved.
+</p>
+<ul class="footer-links">
+    <li>
+        <a href="index.html">Home</a>
+        |
+    </li>
+    <li>
+        <a href="about-us.html">About</a>
+        |
+    </li>
+    <li>
+        <a href="software-solutions.html">Software</a>
+        |
+    </li>
+    <li>
+        <a href="web-design-development.html">Web</a>
+        |
+    </li>
+    <li>
+        <a href="corporate-identity-design.html">Branding</a>
+        |
+    </li>
+    <li>
+        <a href="contact.html">Contact</a>
+    </li>
+</ul>
+</div></div></footer>
+    <a class="clients-whatsapp" href="contact.html" aria-label="Contact NEVORA Technologies">
+        <span class="clients-whatsapp-mark" aria-hidden="true">WA</span>
+        <span>Chat with us</span>
+    </a>
+<script src="js/nevora-whatsapp.js"></script>
+</body>
+</html>

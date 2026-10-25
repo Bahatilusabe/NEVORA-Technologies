@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hotel management software in Kenya to coordinate reservations, front-desk operations, guest services and property workflows.">
+    <title>Hotel Management System in Kenya | NEVORA Technologies</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NEVORA Technologies">
+    <meta property="og:title" content="Hotel Management System in Kenya | NEVORA Technologies">
+    <meta property="og:description" content="Hotel management software in Kenya to coordinate reservations, front-desk operations, guest services and property workflows.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hotel Management System in Kenya | NEVORA Technologies">
+    <meta name="twitter:description" content="Hotel management software in Kenya to coordinate reservations, front-desk operations, guest services and property workflows.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="shortcodes.css" type="text/css" media="all">
+    <link rel="stylesheet" href="skins/skyblue/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/nevora-site-chrome.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+    <style>
+        :root {
+            color-scheme: light;
+            --service-ink: #19334e;
+            --service-muted: #536980;
+            --service-accent: #1688a8;
+            --service-accent-soft: #83e0ef;
+            --service-paper: #f4f8fb;
+            --service-dark: #102b48;
+            --service-mid: #17607f;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body.service-page { color: var(--service-muted); font-family: "Open Sans", Arial, sans-serif; margin: 0; }
+        .service-hero {
+            background: radial-gradient(circle at 88% 15%, rgba(91, 206, 231, .22), transparent 26%),
+                linear-gradient(120deg, var(--service-dark) 0%, var(--service-mid) 58%, var(--service-accent) 100%);
+            color: #fff;
+            overflow: hidden;
+            padding: clamp(58px, 8vw, 100px) 24px;
+            position: relative;
+        }
+        .service-hero::after {
+            border: 1px solid rgba(255, 255, 255, .18);
+            border-radius: 50%;
+            content: "";
+            height: 380px;
+            position: absolute;
+            right: -120px;
+            top: -200px;
+            width: 380px;
+        }
+        .service-hero-inner, .service-content { margin: 0 auto; max-width: 1152px; position: relative; }
+        .service-eyebrow { color: var(--service-accent-soft); font-size: 12px; font-weight: 700; letter-spacing: .16em; margin: 0 0 14px; text-transform: uppercase; }
+        .service-hero h1 { color: #fff; font-size: clamp(38px, 6vw, 66px); letter-spacing: -.045em; line-height: 1.06; margin: 0; max-width: 800px; }
+        .service-hero-copy { color: rgba(255, 255, 255, .84); font-size: clamp(16px, 2vw, 19px); line-height: 1.8; margin: 18px 0 0; max-width: 720px; }
+        .service-breadcrumb { color: rgba(255, 255, 255, .76); display: flex; flex-wrap: wrap; font-size: 13px; gap: 10px; margin-top: 26px; }
+        .service-breadcrumb a { color: #fff; text-decoration: none; }
+        .service-breadcrumb a:hover { text-decoration: underline; }
+        .service-content { padding: 58px 24px 70px; }
+        .service-layout { align-items: start; display: grid; gap: 32px; grid-template-columns: minmax(230px, .72fr) minmax(0, 2fr); }
+        .service-sidebar { display: grid; gap: 20px; }
+        .service-sidebar-card { background: #fff; border: 1px solid #e2eaf1; border-radius: 14px; box-shadow: 0 10px 28px rgba(26, 48, 73, .06); padding: 20px; }
+        .service-sidebar-card h2 { color: var(--service-ink); font-size: 17px; line-height: 1.4; margin: 0 0 14px; }
+        .service-service-list { list-style: none; margin: 0; padding: 0; }
+        .service-service-list li { border-bottom: 1px solid #e8eef4; display: grid; gap: 12px; grid-template-columns: 74px minmax(0, 1fr); margin: 0; padding: 10px 0; }
+        .service-service-list li:first-child { padding-top: 0; }
+        .service-service-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+        .service-thumb { border-radius: 9px; display: block; height: 72px; overflow: hidden; width: 74px; }
+        .service-thumb img { display: block; height: 100%; object-fit: cover; width: 100%; }
+        .service-service-list h3 { font-size: 13px; line-height: 1.45; margin: 0 0 6px; }
+        .service-service-list h3 a { color: #314a65; font-weight: 700; text-decoration: none; }
+        .service-service-list h3 a:hover, .service-service-list h3 a:focus-visible { color: var(--service-accent); }
+        .service-read-more { color: var(--service-accent); font-size: 12px; font-weight: 700; text-decoration: none; }
+        .service-read-more:hover, .service-read-more:focus-visible { text-decoration: underline; }
+        .service-sidebar-contact { background: linear-gradient(145deg, #102b48, #164f78); border: 0; color: rgba(255, 255, 255, .8); }
+        .service-sidebar-contact h2 { color: #fff; }
+        .service-sidebar-contact p { font-size: 13px; line-height: 1.7; margin: 0; }
+        .service-sidebar-contact a { color: #8ce2f4; display: inline-block; font-size: 13px; font-weight: 700; margin-top: 12px; text-decoration: none; }
+        .service-main { min-width: 0; }
+        .service-intro { align-items: center; display: grid; gap: clamp(28px, 5vw, 64px); grid-template-columns: minmax(0, 1fr) minmax(260px, .83fr); }
+        .service-intro h2, .service-section h2 { color: var(--service-ink); font-size: clamp(27px, 3.5vw, 38px); letter-spacing: -.03em; line-height: 1.2; margin: 0 0 16px; }
+        .service-intro p, .service-section > p { font-size: 15px; line-height: 1.85; margin: 0 0 15px; }
+        .service-image { background: #eaf2f7; border-radius: 18px; box-shadow: 0 18px 44px rgba(26, 48, 73, .15); display: block; height: auto; max-width: 100%; object-fit: contain; width: 100%; }
+        .service-section { margin-top: 70px; }
+        .service-section-heading { margin-bottom: 24px; max-width: 740px; }
+        .service-feature-grid { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .service-feature { background: #fff; border: 1px solid #e2eaf1; border-radius: 14px; box-shadow: 0 10px 28px rgba(26, 48, 73, .05); padding: 22px; }
+        .service-feature-number { align-items: center; background: #e6f7fb; border-radius: 50%; color: var(--service-accent); display: inline-flex; font-size: 12px; font-weight: 700; height: 36px; justify-content: center; margin-bottom: 15px; width: 36px; }
+        .service-feature h3 { color: var(--service-ink); font-size: 17px; line-height: 1.4; margin: 0 0 9px; }
+        .service-feature p { font-size: 13px; line-height: 1.75; margin: 0; }
+        .service-process { background: var(--service-paper); border: 1px solid #e3edf3; border-radius: 18px; margin-top: 60px; padding: clamp(24px, 5vw, 44px); }
+        .service-process ol { display: grid; gap: 22px; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 24px 0 0; padding: 0; }
+        .service-process li { border-top: 2px solid #9adfed; color: var(--service-muted); font-size: 14px; line-height: 1.75; padding-top: 15px; }
+        .service-process li strong { color: var(--service-ink); display: block; font-size: 15px; margin-bottom: 5px; }
+        .service-cta { align-items: center; background: linear-gradient(140deg, var(--service-dark), var(--service-mid)); border-radius: 18px; color: #fff; display: flex; gap: 24px; justify-content: space-between; margin-top: 60px; padding: clamp(26px, 5vw, 42px); }
+        .service-cta h2 { color: #fff; font-size: clamp(24px, 3vw, 32px); margin: 0 0 9px; }
+        .service-cta p { color: rgba(255, 255, 255, .78); line-height: 1.7; margin: 0; max-width: 680px; }
+        .service-cta-link { background: #fff; border-radius: 999px; color: #145275; flex: 0 0 auto; font-size: 13px; font-weight: 700; padding: 14px 20px; text-decoration: none; }
+        .service-cta-link:hover, .service-cta-link:focus-visible { background: #dff7ff; color: #145275; }
+        @media (max-width: 760px) {
+            .service-layout { grid-template-columns: minmax(0, 1fr); }
+            .service-sidebar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .service-intro { grid-template-columns: minmax(0, 1fr); }
+            .service-image { max-height: 390px; object-fit: cover; }
+            .service-feature-grid, .service-process ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width: 520px) {
+            .service-content { padding: 40px 18px 52px; }
+            .service-sidebar { grid-template-columns: minmax(0, 1fr); }
+            .service-feature-grid, .service-process ol { grid-template-columns: minmax(0, 1fr); }
+            .service-cta { align-items: flex-start; flex-direction: column; }
+        }
+    </style>
+</head>
+<body class="service-page">
+    <div id="header-wrapper">
+        <header class="header nevora-site-header">
+            <div class="container">
+                <div id="logo">
+                    <a href="index.html" title="NEVORA Technologies"><img src="images/logo@2x.webp" alt="NEVORA Technologies"></a>
+                </div>
+                <div id="menu-container">
+                    <nav id="main-menu" aria-label="Main navigation">
+                        <button id="dt-menu-toggle" class="dt-menu-toggle" type="button" aria-expanded="false" aria-controls="hotel-main-menu">Menu <span class="dt-menu-toggle-icon" aria-hidden="true"></span></button>
+                        <ul class="menu" id="hotel-main-menu">
+                            <li class="menu-item-simple-parent"><a href="index.html">Home</a></li>
+                            <li class="menu-item-simple-parent"><a href="about-us.html">The Company</a></li>
+                            <li class="current_page_item menu-item-simple-parent"><a href="software-solutions.html">Our Services</a></li>
+                            <li class="menu-item-simple-parent"><a href="our-clients.html">Our Clients</a></li>
+                            <li class="menu-item-simple-parent"><a href="client-testimonial.html">Client Testimonials</a></li>
+                            <li class="menu-item-simple-parent"><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <section class="service-hero">
+            <div class="service-hero-inner">
+                <p class="service-eyebrow">Hotel Property Management | Kenya</p>
+                <h1>Hotel operations, made easier.</h1>
+                <p class="service-hero-copy">A flexible hotel management system designed to help hospitality teams coordinate bookings, front-desk service and day-to-day operations.</p>
+                <nav class="service-breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a><span aria-hidden="true">/</span>
+                    <a href="software-solutions.html">Software Solutions</a><span aria-hidden="true">/</span>
+                    <span aria-current="page">Hotel Management System</span>
+                </nav>
+            </div>
+        </section>
+        <div class="service-content">
+            <div class="service-layout">
+                <aside class="service-sidebar" aria-label="Related services">
+                    <section class="service-sidebar-card">
+                        <h2>More solutions</h2>
+                        <ul class="service-service-list">
+                            <li>
+                                <a class="service-thumb" href="software-solutions.html" aria-label="Custom software development"><img src="images/software-development-companies-in-kenya.jpg" alt="" loading="lazy"></a>
+                                <div><h3><a href="software-solutions.html">Custom software development</a></h3><a class="service-read-more" href="software-solutions.html">Read more</a></div>
+                            </li>
+                            <li>
+                                <a class="service-thumb" href="erp-implementations.html" aria-label="ERP implementation"><img src="images/erp-software-in-kenya.jpg" alt="" loading="lazy"></a>
+                                <div><h3><a href="erp-implementations.html">ERP implementation</a></h3><a class="service-read-more" href="erp-implementations.html">Read more</a></div>
+                            </li>
+                            <li>
+                                <a class="service-thumb" href="hospital-management-system-in-kenya.html" aria-label="Hospital management system"><img src="images/sliders/hospital.png" alt="" loading="lazy"></a>
+                                <div><h3><a href="hospital-management-system-in-kenya.html">Hospital management system</a></h3><a class="service-read-more" href="hospital-management-system-in-kenya.html">Read more</a></div>
+                            </li>
+                            <li>
+                                <a class="service-thumb" href="manufacturing-erp-system-in-kenya.html" aria-label="Manufacturing ERP"><img src="images/kenya-manufacturing-software.jpg" alt="" loading="lazy"></a>
+                                <div><h3><a href="manufacturing-erp-system-in-kenya.html">Manufacturing ERP system</a></h3><a class="service-read-more" href="manufacturing-erp-system-in-kenya.html">Read more</a></div>
+                            </li>
+                            <li>
+                                <a class="service-thumb" href="mobile-app-development-company-in-kenya.html" aria-label="Mobile application development"><img src="images/mobile-applications.jpg" alt="" loading="lazy"></a>
+                                <div><h3><a href="mobile-app-development-company-in-kenya.html">Mobile application development</a></h3><a class="service-read-more" href="mobile-app-development-company-in-kenya.html">Read more</a></div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="service-sidebar-card service-sidebar-contact">
+                        <h2>Planning a hospitality system?</h2>
+                        <p>Tell us about your property, service model and the workflows you want to improve.</p>
+                        <a href="contact.html?service=Hotel%20Management#contact-form">Start an enquiry</a>
+                    </section>
+                </aside>
+                <div class="service-main">
+                    <section class="service-intro">
+                        <div>
+                            <h2>A connected property management system for smoother stays.</h2>
+                            <p>Bring the moving parts of your hotel into one connected property management system. NEVORA works with hospitality teams in Kenya to shape practical software around their property, service model and operating priorities.</p>
+                            <p>Start with the workflows you need today and grow the system as your operation evolves—from a single property and front desk to multi-property teams and additional departments. Keep reservations, guest service and back-office processes easier to coordinate, with access to your operations wherever your work takes you.</p>
+                        </div>
+                        <img src="images/hotel-management-system-hover.png" alt="Hotel management software for hospitality operations" class="service-image" fetchpriority="high">
+                    </section>
+                    <section class="service-section">
+                        <div class="service-section-heading"><h2>Bring essential hotel workflows together</h2></div>
+                        <div class="service-feature-grid">
+                            <article class="service-feature"><div class="service-feature-number">01</div><h3>Reservations and front desk</h3><p>Coordinate bookings, guest arrivals and front-desk service with a clearer view of room availability and daily activity.</p></article>
+                            <article class="service-feature"><div class="service-feature-number">02</div><h3>Guest experience</h3><p>Help teams stay aligned on guest requests, service follow-ups and the details that make every stay feel considered.</p></article>
+                            <article class="service-feature"><div class="service-feature-number">03</div><h3>Property operations</h3><p>Connect housekeeping, restaurant and bar point of sale, stock control and other modules to match your operation.</p></article>
+                        </div>
+                    </section>
+                    <section class="service-section">
+                        <div class="service-section-heading"><h2>Designed around your property</h2></div>
+                        <div class="service-process">
+                            <ol>
+                                <li><strong>Map the operation</strong>We learn how your property manages rooms, services, guests and back-office responsibilities.</li>
+                                <li><strong>Shape the system</strong>We identify the modules and workflows that best support your current needs and future plans.</li>
+                                <li><strong>Support adoption</strong>We help your team test, learn and refine the system as it becomes part of daily operations.</li>
+                            </ol>
+                        </div>
+                    </section>
+                    <section class="service-cta" aria-labelledby="hotel-cta-title">
+                        <div>
+                            <h2 id="hotel-cta-title">Let’s make your hotel operations easier to manage.</h2>
+                            <p>Share your property goals and the guest or back-office workflows you want to improve. We’ll help you explore a practical PMS approach.</p>
+                        </div>
+                        <a class="service-cta-link" href="contact.html?service=Hotel%20Management#contact-form">Discuss your property <span aria-hidden="true">→</span></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-widgets-wrapper">
+            <div class="container">
+                <div class="column dt-sc-one-fourth first">
+                    <aside class="widget widget_text nevora-footer-contact">
+                        <h3 class="widget-title">Contact <span class="wlast">Us</span><span class="small-line"></span></h3>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i><span><strong>Phone:</strong> <a href="tel:+254769101739">+254 769 101 739</a></span></p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i><span><strong>Email:</strong> <a href="mailto:bahatilusabe@gmail.com">bahatilusabe@gmail.com</a></span></p>
+                        <p><i class="fa fa-globe" aria-hidden="true"></i><span><strong>Website:</strong> <a href="https://www.nevora.tech/">www.nevora.tech</a></span></p>
+                        <p><i class="fa fa-location-arrow" aria-hidden="true"></i><span><strong>Location:</strong> Kenya</span></p>
+                    </aside>
+                </div>
+                <div class="column dt-sc-one-fourth">
+                    <aside class="widget widget_text">
+                        <h3 class="widget-title">Hotel <span class="wlast">Operations</span><span class="small-line"></span></h3>
+                        <p class="nevora-footer-intro">Connected systems for reservations, guest service and property operations.</p>
+                    </aside>
+                </div>
+                <div class="column dt-sc-one-fourth">
+                    <aside class="widget widget_text">
+                        <h3 class="widget-title">Explore <span class="wlast">NEVORA</span><span class="small-line"></span></h3>
+                        <ul class="nevora-sidebar-links">
+                            <li><a href="software-solutions.html">Software Solutions</a></li>
+                            <li><a href="erp-implementations.html">ERP Implementations</a></li>
+                            <li><a href="our-clients.html">Our Clients</a></li>
+                            <li><a href="client-testimonial.html">Client Testimonials</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="column dt-sc-one-fourth">
+                    <aside class="widget widget_text">
+                        <h3 class="widget-title">Let’s <span class="wlast">Connect</span><span class="small-line"></span></h3>
+                        <p class="nevora-footer-intro">Talk to our team about your property, service model and hotel system needs.</p>
+                        <p><a href="contact.html?service=Hotel%20Management#contact-form">Start an enquiry</a></p>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>NEVORA Technologies, &copy;2026. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a> |</li>
+                    <li><a href="about-us.html">About</a> |</li>
+                    <li><a href="software-solutions.html">Software</a> |</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hotelMenuToggle = document.getElementById("dt-menu-toggle");
+        const hotelMainMenu = document.getElementById("main-menu");
+        hotelMenuToggle.addEventListener("click", () => {
+            const isExpanded = hotelMenuToggle.getAttribute("aria-expanded") === "true";
+            hotelMenuToggle.setAttribute("aria-expanded", String(!isExpanded));
+            hotelMainMenu.classList.toggle("is-open", !isExpanded);
+        });
+    </script>
+    <script src="js/nevora-whatsapp.js"></script>
+</body>
+</html>

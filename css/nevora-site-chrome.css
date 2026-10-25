@@ -1,0 +1,457 @@
+.nevora-site-header #logo {
+    box-sizing: border-box;
+    max-width: 30%;
+    padding: 22px 0 19px;
+    width: 300px;
+}
+
+.nevora-site-header #logo a {
+    display: block;
+    width: 100%;
+}
+
+.nevora-site-header #logo a img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.nevora-whatsapp-contact {
+    align-items: center;
+    background: #25d366;
+    border: 0;
+    border-radius: 999px;
+    bottom: 22px;
+    box-shadow: 0 8px 22px rgba(13, 78, 43, .24);
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 700;
+    gap: 10px;
+    padding: 13px 18px;
+    position: fixed;
+    right: 24px;
+    text-decoration: none;
+    transition: background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+    z-index: 100000;
+    font-family: inherit;
+}
+
+.nevora-whatsapp-contact:hover,
+.nevora-whatsapp-contact:focus-visible {
+    background: #1fbd5b;
+    box-shadow: 0 11px 26px rgba(13, 78, 43, .3);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.nevora-whatsapp-contact:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+.nevora-whatsapp-contact-mark {
+    align-items: center;
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, .55);
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 10px;
+    height: 24px;
+    justify-content: center;
+    letter-spacing: -.04em;
+    width: 24px;
+}
+
+#footer {
+    background: #071a2b;
+    color: #d5e1eb;
+}
+
+#footer .footer-widgets-wrapper {
+    background:
+        linear-gradient(105deg, rgba(5, 20, 35, .94) 0%, rgba(7, 27, 45, .88) 48%, rgba(8, 39, 58, .79) 100%),
+        url("../images/footer-bg.jpg") center 48% / cover no-repeat;
+    border-top: 1px solid rgba(120, 221, 244, .35);
+    float: none;
+    padding: 64px 0 34px;
+}
+
+#footer .footer-widgets-wrapper > .container {
+    display: flow-root;
+}
+
+#footer .footer-widgets-wrapper .column {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#footer .widget-title {
+    border-bottom: 1px solid rgba(255, 255, 255, .16);
+    color: #f5fbff;
+    font-size: 18px;
+    letter-spacing: .01em;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+}
+
+#footer .widget-title .small-line {
+    background: linear-gradient(90deg, #67d7f2, rgba(103, 215, 242, .12));
+    border-radius: 2px;
+    height: 3px;
+    margin-top: 11px;
+    width: 68px;
+}
+
+#footer .widget-title .wlast {
+    color: #a8dced;
+}
+
+#footer .footer-widgets-wrapper p {
+    color: #c1d0dc;
+    line-height: 1.75;
+}
+
+#footer .nevora-footer-contact p {
+    margin-bottom: 14px;
+}
+
+#footer .nevora-footer-contact p > i {
+    color: #71d8ef;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#footer .nevora-footer-contact p strong {
+    color: #f3f8fb;
+}
+
+#footer .footer-widgets-wrapper a {
+    color: #c9d9e6;
+    text-decoration-color: rgba(120, 221, 244, .45);
+    text-underline-offset: 3px;
+    transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+#footer .footer-widgets-wrapper a:hover,
+#footer .footer-widgets-wrapper a:focus-visible {
+    color: #80e4f5;
+    text-decoration-color: currentColor;
+}
+
+#footer .footer-widgets-wrapper a:focus-visible,
+#footer .footer-links a:focus-visible {
+    border-radius: 2px;
+    outline: 2px solid #80e4f5;
+    outline-offset: 4px;
+}
+
+#footer .nevora-social-channels {
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+#footer .nevora-social-channels li {
+    background: rgba(255, 255, 255, .055);
+    border-color: rgba(179, 220, 237, .3);
+    border-radius: 999px;
+    color: #e4f0f7;
+    padding: 8px 13px;
+    transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+#footer .nevora-social-channels li:hover {
+    background: rgba(103, 215, 242, .14);
+    border-color: rgba(128, 228, 245, .7);
+    transform: translateY(-2px);
+}
+
+#footer .nevora-social-channels li span {
+    color: #80e4f5;
+}
+
+#footer .footer-widgets-wrapper .mailchimp-form {
+    background: rgba(255, 255, 255, .97);
+    border: 1px solid rgba(194, 224, 237, .7);
+    border-radius: 8px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .16);
+    display: flex;
+    float: none;
+    margin-top: 18px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#footer .footer-widgets-wrapper .mailchimp-form p {
+    align-items: center;
+    display: flex;
+    float: none;
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+}
+
+#footer .footer-widgets-wrapper .mailchimp-form .fa {
+    border: 0;
+    color: #47718a;
+    flex: 0 0 auto;
+    float: none;
+    line-height: 1;
+    padding: 0 0 0 14px;
+    width: auto;
+}
+
+#footer .footer-widgets-wrapper .mailchimp-form input[type="email"] {
+    background: transparent;
+    box-sizing: border-box;
+    color: #17344a;
+    flex: 1 1 auto;
+    float: none;
+    min-width: 0;
+    padding: 14px 10px;
+    width: auto;
+}
+
+#footer .footer-widgets-wrapper .mailchimp-form input[type="email"]::placeholder {
+    color: #6c8190;
+}
+
+#footer .footer-widgets-wrapper .mailchimp-form .dt-sc-button {
+    background: #54cbe4;
+    border-radius: 0;
+    color: #08263a;
+    flex: 0 0 auto;
+    float: none;
+    font-size: 13px;
+    font-weight: 700;
+    min-height: 0;
+    padding: 14px 17px;
+    position: static;
+    transition: background 160ms ease;
+}
+
+#footer .footer-widgets-wrapper .mailchimp-form .dt-sc-button:hover,
+#footer .footer-widgets-wrapper .mailchimp-form .dt-sc-button:focus-visible {
+    background: #8ce8f5;
+    color: #08263a;
+}
+
+#footer .copyright {
+    background: #051321;
+    border-top: 1px solid rgba(176, 215, 232, .14);
+    box-sizing: border-box;
+    color: #9fb4c4;
+    display: block;
+    float: none;
+    padding: 20px 0;
+}
+
+#footer .copyright .container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    justify-content: space-between;
+}
+
+#footer .copyright p {
+    color: #a9bdcb;
+    float: none;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    float: none;
+    gap: 4px 12px;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+#footer .footer-links li {
+    float: none;
+    padding: 0;
+}
+
+#footer .footer-links li a {
+    color: #b7c9d6;
+    font-size: 12px;
+    padding: 2px 0;
+}
+
+#footer .footer-links li a:hover,
+#footer .footer-links li a:focus-visible {
+    color: #80e4f5;
+}
+
+@media (max-width: 480px) {
+    .nevora-whatsapp-contact {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    #footer .footer-widgets-wrapper {
+        padding: 42px 0 18px;
+    }
+
+    #footer .footer-widgets-wrapper .column {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #footer .copyright .container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #footer .footer-links {
+        justify-content: flex-start;
+    }
+}
+
+#footer .nevora-footer-contact p {
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+#footer .nevora-footer-contact p > i {
+    color: #78ddf4;
+    flex: 0 0 16px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+#footer .nevora-footer-contact p a {
+    overflow-wrap: anywhere;
+}
+
+#footer .nevora-footer-intro {
+    color: #b4c3d0;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0 0 16px;
+}
+
+#footer .nevora-social-channels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#footer .nevora-social-channels li {
+    border: 1px solid rgba(255, 255, 255, .22);
+    border-radius: 20px;
+    color: #e0e9ef;
+    font-size: 12px;
+    margin: 0;
+    padding: 6px 10px;
+}
+
+#footer .nevora-social-channels li span {
+    align-items: center;
+    display: inline-flex;
+    font-size: 14px;
+    justify-content: center;
+    margin-right: 5px;
+    min-width: 14px;
+}
+
+#footer .nevora-social-channels .nevora-x-icon {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#footer .nevora-newsletter-note {
+    color: #9fb0bf;
+    font-size: 11px;
+    line-height: 1.55;
+    margin-top: 10px;
+}
+
+@media (min-width: 960px) {
+    #header-wrapper {
+        position: sticky;
+        top: 0;
+        z-index: 99999;
+    }
+
+    .nevora-site-header .container {
+        width: 100%;
+    }
+
+    .nevora-site-header #logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 12px 20px;
+        text-align: center;
+        width: 500px;
+    }
+
+    .nevora-site-header #logo a {
+        display: inline-block;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .nevora-site-header #logo a img {
+        max-height: 200px;
+        width: 100%;
+    }
+
+    .nevora-site-header #menu-container,
+    .nevora-site-header #main-menu {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nevora-site-header #main-menu > ul > li > a {
+        padding: 24px 16px 21px;
+    }
+
+    .nevora-site-header #main-menu ul li.menu-item-simple-parent ul,
+    .nevora-site-header .megamenu-child-container {
+        top: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .nevora-site-header .container {
+        position: relative;
+    }
+
+    .nevora-site-header #logo {
+        max-width: calc(100% - 80px);
+        padding: 14px 0;
+        width: 260px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .nevora-site-header #menu-container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .nevora-site-header #main-menu {
+        position: relative;
+        transform: translateY(-30px);
+        z-index: 3;
+    }
+
+}

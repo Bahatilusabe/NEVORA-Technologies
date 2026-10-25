@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" fill="none">
+  <defs>
+    <linearGradient id="panel" x1="84" y1="49" x2="628" y2="435" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142d4b"/>
+      <stop offset="1" stop-color="#087f9c"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="209" y1="116" x2="492" y2="366" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#62d8ed"/>
+      <stop offset="1" stop-color="#8ee8bf"/>
+    </linearGradient>
+    <filter id="shadow" x="104" y="59" width="512" height="362" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#0d263c" flood-opacity=".2"/>
+    </filter>
+  </defs>
+  <rect width="720" height="480" rx="28" fill="#edf6fa"/>
+  <circle cx="592" cy="91" r="45" fill="#d5f5f2"/>
+  <circle cx="106" cy="373" r="58" fill="#dcecf8"/>
+  <g filter="url(#shadow)">
+    <rect x="124" y="83" width="472" height="314" rx="22" fill="url(#panel)"/>
+    <path d="M124 105a22 22 0 0 1 22-22h428a22 22 0 0 1 22 22v34H124v-34Z" fill="#1c3e5c"/>
+    <circle cx="153" cy="111" r="5" fill="#ff8e89"/>
+    <circle cx="172" cy="111" r="5" fill="#ffd27a"/>
+    <circle cx="191" cy="111" r="5" fill="#81e1bf"/>
+    <rect x="154" y="166" width="175" height="190" rx="14" fill="#f7fbfd"/>
+    <text x="176" y="197" fill="#29425b" font-family="Arial,sans-serif" font-size="15" font-weight="700">WORKFLOW</text>
+    <rect x="174" y="216" width="134" height="32" rx="8" fill="#e7f3f8"/>
+    <circle cx="191" cy="232" r="7" fill="#28a6bb"/>
+    <path d="M207 232h82" stroke="#9bb3c4" stroke-linecap="round" stroke-width="5"/>
+    <rect x="174" y="260" width="134" height="32" rx="8" fill="#e7f3f8"/>
+    <circle cx="191" cy="276" r="7" fill="#59c898"/>
+    <path d="M207 276h64" stroke="#9bb3c4" stroke-linecap="round" stroke-width="5"/>
+    <rect x="174" y="304" width="134" height="32" rx="8" fill="#e7f3f8"/>
+    <circle cx="191" cy="320" r="7" fill="#647feb"/>
+    <path d="M207 320h76" stroke="#9bb3c4" stroke-linecap="round" stroke-width="5"/>
+    <path d="M357 257h37m0 0-11-11m11 11-11 11" stroke="url(#glow)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+    <rect x="416" y="166" width="146" height="110" rx="15" fill="#f7fbfd"/>
+    <circle cx="489" cy="215" r="27" fill="#d9f5f3"/>
+    <path d="M489 197v36m-18-18h36m-31-13 26 26m0-26-26 26" stroke="#168e9d" stroke-linecap="round" stroke-width="4"/>
+    <text x="447" y="258" fill="#29425b" font-family="Arial,sans-serif" font-size="12" font-weight="700">INTELLIGENT ACTION</text>
+    <rect x="416" y="295" width="146" height="61" rx="14" fill="#fff"/>
+    <path d="M439 322l12 12 25-27" stroke="#24a978" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+    <path d="M487 318h53m-53 12h39" stroke="#9bb3c4" stroke-linecap="round" stroke-width="5"/>
+    <path d="M344 169v-15a27 27 0 0 1 54 0v15" stroke="#8ee8bf" stroke-linecap="round" stroke-width="7"/>
+    <rect x="337" y="164" width="68" height="57" rx="13" fill="#8ee8bf"/>
+    <circle cx="371" cy="187" r="5" fill="#164665"/>
+    <path d="M371 192v11" stroke="#164665" stroke-linecap="round" stroke-width="5"/>
+  </g>
+</svg>

@@ -1,0 +1,2619 @@
+<!Doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NEVORA Technologies | Technology that moves business forward</title>
+        <meta name="description" content="NEVORA Technologies is a Kenya-founded technology company building custom software, intelligent digital solutions, and secure systems to help businesses grow."/>
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="NEVORA Technologies">
+        <meta property="og:title" content="NEVORA Technologies | Technology that moves business forward">
+        <meta property="og:description" content="NEVORA Technologies is a Kenya-founded technology company building custom software, intelligent digital solutions, and secure systems to help businesses grow.">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="NEVORA Technologies | Technology that moves business forward">
+        <meta name="twitter:description" content="NEVORA Technologies is a Kenya-founded technology company building custom software, intelligent digital solutions, and secure systems to help businesses grow.">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <meta name="keywords" content="software company in kenya, software campanies in kenya, software comapanies in Nairobi, software consulatants in kenya, software consultants nairobi, tech companies in kenya, tech companies in nairobi, software developers in kenya, software development in kenya, software development in nairobi"/>
+        <meta name="googlebot" content="index,follow"/>
+        <meta name="never" content="expires"/>
+        <meta name="software companies in kenya, software company in kenya" content="category"/>
+        <meta name="coverage" content="Worldwide">
+        <meta name="expires" content="never">
+        <meta name="language" content="English">
+        <meta name="audience" content="all">
+        <meta name="web-type" content="normal">
+        <meta name="doc-type" content="Web Page">
+        <meta name="Rating" content="General">
+        <meta name="Distribution" content="Global">
+        <meta name="YahooSeeker" content="index, follow"/>
+        <meta name="msnbot" content="index, follow"/>
+        <meta name="allow-search" content="yes"/>
+        <meta name="msvalidate.01" content="07F7E9FE29053DC564914D463C470B52"/>
+        <!--[if lt IE 9]>
+	    <![endif]-->
+        <!-- **CSS - stylesheets** -->
+        <link id="default-css" rel="stylesheet" href="style.css" type="text/css" media="all"/>
+        <link id="shortcodes-css" rel="stylesheet" href="shortcodes.css" type="text/css" media="all"/>
+        <link id="skin-css" rel="stylesheet" href="skins/skyblue/style.css" type="text/css" media="all"/>
+        <!-- **Additional - stylesheets** -->
+        <link rel="stylesheet" href="responsive.css" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/nevora-site-chrome.css" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/meanmenu.css" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all"/>
+        <!-- **Google - Fonts** -->
+        <style>
+            .home-slider {
+                background: #122133;
+                height: clamp(440px, 52vw, 650px);
+                min-height: 420px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .home-slider__slides,
+            .home-slide {
+                height: 100%;
+                inset: 0;
+                position: absolute;
+                width: 100%;
+            }
+
+            .home-slide {
+                align-items: center;
+                background-color: #122133;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                opacity: 0;
+                transition: opacity 900ms ease;
+                visibility: hidden;
+                z-index: 0;
+            }
+
+            .home-slide::before {
+                background: linear-gradient(90deg, rgba(9, 22, 38, .94) 0%, rgba(9, 22, 38, .78) 43%, rgba(9, 22, 38, .24) 100%);
+                content: "";
+                inset: 0;
+                position: absolute;
+            }
+
+            .home-slide.is-active {
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+            }
+
+            .home-slide--software {
+                background-image: url("images/sliders/bg1.jpg");
+            }
+
+            .home-slide--intelligence {
+                background-image: url("images/cybersecurity/cybersec.jpeg");
+            }
+
+            .home-slide--enterprise {
+                background-image: url("images/sliders/bg4.jpg");
+            }
+
+            .home-slide--web {
+                background-image: url("images/sliders/bg8.jpg");
+            }
+
+            .home-slide--mobile {
+                background-image: url("images/sliders/mobile-app-development-in-kenya.webp");
+            }
+
+            .home-slide__content {
+                color: #fff;
+                margin: 0 auto;
+                max-width: 1200px;
+                opacity: 0;
+                padding: 45px 80px 70px;
+                position: relative;
+                transform: translateY(24px);
+                transition: opacity 700ms ease 150ms, transform 700ms ease 150ms;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .home-slide.is-active .home-slide__content {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .home-slide__eyebrow {
+                color: #67d7f2;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: .18em;
+                margin: 0 0 18px;
+                opacity: 0;
+                text-transform: uppercase;
+                transform: translateY(14px);
+                transition: opacity 500ms ease 200ms, transform 500ms ease 200ms;
+            }
+
+            .home-slide__title {
+                color: #fff;
+                font-size: clamp(38px, 5.2vw, 68px);
+                font-weight: 700;
+                line-height: 1.04;
+                margin: 0 0 20px;
+                max-width: 720px;
+                opacity: 0;
+                transform: translateY(14px);
+                transition: opacity 600ms ease 320ms, transform 600ms ease 320ms;
+            }
+
+            .home-slide__description {
+                color: rgba(255, 255, 255, .86);
+                font-size: clamp(16px, 1.5vw, 19px);
+                line-height: 1.7;
+                margin: 0 0 30px;
+                max-width: 620px;
+                opacity: 0;
+                transform: translateY(14px);
+                transition: opacity 600ms ease 440ms, transform 600ms ease 440ms;
+            }
+
+            .home-slide__actions {
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                opacity: 0;
+                transform: translateY(14px);
+                transition: opacity 600ms ease 560ms, transform 600ms ease 560ms;
+            }
+
+            .home-slide.is-active .home-slide__eyebrow,
+            .home-slide.is-active .home-slide__title,
+            .home-slide.is-active .home-slide__description,
+            .home-slide.is-active .home-slide__actions {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .home-slide__button {
+                border: 1px solid #19b9df;
+                border-radius: 3px;
+                color: #fff;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: .04em;
+                padding: 14px 22px;
+                text-decoration: none;
+                transition: background-color 180ms ease, color 180ms ease;
+            }
+
+            .home-slide__button--primary,
+            .home-slide__button:hover {
+                background: #19b9df;
+                color: #102437;
+            }
+
+            .home-slide__button--secondary:hover {
+                color: #102437;
+            }
+
+            .home-slider__controls {
+                align-items: center;
+                bottom: 22px;
+                display: flex;
+                gap: 18px;
+                left: 0;
+                margin: 0 auto;
+                max-width: 1200px;
+                padding: 0 80px;
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            }
+
+            .home-slider__navigation {
+                align-items: center;
+                display: flex;
+                gap: 8px;
+            }
+
+            .home-slider__arrow,
+            .home-slider__pause {
+                align-items: center;
+                background: rgba(255, 255, 255, .12);
+                border: 1px solid rgba(255, 255, 255, .35);
+                border-radius: 50%;
+                color: #fff;
+                cursor: pointer;
+                display: inline-flex;
+                height: 38px;
+                justify-content: center;
+                padding: 0;
+                transition: background-color 180ms ease;
+                width: 38px;
+            }
+
+            .home-slider__arrow:hover,
+            .home-slider__pause:hover {
+                background: #19b9df;
+                color: #102437;
+            }
+
+            .home-slider__pause {
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight: 700;
+                min-width: 68px;
+                padding: 0 10px;
+                width: auto;
+            }
+
+            .home-slider__arrow span {
+                border-color: currentColor;
+                border-style: solid;
+                border-width: 0 2px 2px 0;
+                height: 9px;
+                width: 9px;
+            }
+
+            .home-slider__previous span {
+                margin-left: 4px;
+                transform: rotate(135deg);
+            }
+
+            .home-slider__next span {
+                margin-right: 4px;
+                transform: rotate(-45deg);
+            }
+
+            .home-slider__dots {
+                align-items: center;
+                display: flex;
+                gap: 8px;
+            }
+
+            .home-slider__dot {
+                background: rgba(255, 255, 255, .38);
+                border: 0;
+                border-radius: 10px;
+                cursor: pointer;
+                height: 5px;
+                padding: 0;
+                transition: background-color 180ms ease, width 180ms ease;
+                width: 18px;
+            }
+
+            .home-slider__dot[aria-current="true"] {
+                background: #19b9df;
+                width: 34px;
+            }
+
+            .home-slider button:focus-visible,
+            .home-slide__button:focus-visible {
+                outline: 2px solid #fff;
+                outline-offset: 3px;
+            }
+
+            @media (max-width: 767px) {
+                .home-slider {
+                    height: 520px;
+                    min-height: 0;
+                }
+
+                .home-slide {
+                    background-position: 58% center;
+                }
+
+                .home-slide::before {
+                    background: linear-gradient(90deg, rgba(9, 22, 38, .9), rgba(9, 22, 38, .48));
+                }
+
+                .home-slide__content {
+                    padding: 35px 28px 90px;
+                }
+
+                .home-slide__title {
+                    font-size: clamp(36px, 10vw, 52px);
+                }
+
+                .home-slider__controls {
+                    bottom: 18px;
+                    gap: 12px;
+                    padding: 0 28px;
+                }
+
+                .home-slider__dots {
+                    gap: 5px;
+                }
+
+                .home-slider__dot {
+                    width: 12px;
+                }
+
+                .home-slider__dot[aria-current="true"] {
+                    width: 25px;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .home-slide,
+                .home-slide__content,
+                .home-slide__eyebrow,
+                .home-slide__title,
+                .home-slide__description,
+                .home-slide__actions,
+                .home-slider__dot {
+                    transition: none;
+                }
+            }
+
+            .dt-sc-toggle-content {
+                display: block;
+            }
+
+            .home-intro-cards .entry-post {
+                display: flex;
+                height: 100%;
+            }
+
+            .home-intro-cards .entry-post-content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .home-intro-cards .entry-thumb {
+                flex: 0 0 190px;
+                height: 190px;
+                margin-bottom: 25px;
+                overflow: hidden;
+            }
+
+            .home-intro-cards .entry-thumb a,
+            .home-intro-cards .entry-thumb img {
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+
+            .home-intro-cards .entry-thumb img {
+                object-fit: cover;
+            }
+
+            .home-intro-cards .entry-detail {
+                display: flex;
+                flex: 0 0 222px;
+                flex-direction: column;
+                height: 222px;
+                min-height: 0;
+            }
+
+            .home-intro-cards .entry-detail h5 {
+                align-items: center;
+                display: flex;
+                flex: 0 0 42px;
+                line-height: 1.35;
+                margin-bottom: 10px;
+                overflow: hidden;
+            }
+
+            .home-intro-cards .entry-detail p {
+                display: -webkit-box;
+                flex: 0 0 110px;
+                height: 110px;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 5;
+                line-height: 1.4;
+                margin-bottom: 20px;
+                overflow: hidden;
+            }
+
+            .home-intro-cards .entry-post .dt-sc-button.small {
+                align-self: flex-end;
+                margin-top: auto;
+                position: static;
+            }
+
+            .home-service-grid {
+                display: grid;
+                gap: 28px;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .home-service-grid > .column {
+                float: none;
+                margin: 0;
+                padding: 0;
+                width: auto;
+            }
+
+            .home-ai-highlight {
+                background:
+                    linear-gradient(110deg, rgba(10, 29, 49, .94) 0%, rgba(12, 47, 69, .84) 58%, rgba(9, 45, 64, .48) 100%),
+                    url("images/cybersecurity/bg.jbg.jpeg") center / cover no-repeat;
+                border-radius: 22px;
+                box-shadow: 0 18px 44px rgba(15, 47, 71, .2);
+                color: #fff;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                margin: 6px auto 24px;
+                max-width: 1200px;
+                overflow: hidden;
+                padding: clamp(28px, 5vw, 54px);
+                position: relative;
+            }
+
+            .home-ai-highlight::after {
+                border: 1px solid rgba(255, 255, 255, .15);
+                border-radius: 50%;
+                content: "";
+                height: 330px;
+                position: absolute;
+                right: -150px;
+                top: -210px;
+                width: 330px;
+            }
+
+            .home-ai-highlight-copy {
+                position: relative;
+                z-index: 1;
+            }
+
+            .home-ai-highlight-kicker {
+                color: #8ee8bf;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: .16em;
+                margin: 0 0 12px;
+                text-transform: uppercase;
+            }
+
+            .home-ai-highlight h2 {
+                color: #fff;
+                font-size: clamp(28px, 4vw, 42px);
+                letter-spacing: -.035em;
+                line-height: 1.15;
+                margin: 0 0 14px;
+                max-width: 650px;
+            }
+
+            .home-ai-highlight-copy > p:not(.home-ai-highlight-kicker) {
+                color: rgba(255, 255, 255, .82);
+                font-size: 15px;
+                line-height: 1.8;
+                margin: 0;
+                max-width: 640px;
+            }
+
+            .home-ai-highlight-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 9px;
+                list-style: none;
+                margin: 20px 0 0;
+                padding: 0;
+            }
+
+            .home-ai-highlight-tags li {
+                background: rgba(255, 255, 255, .1);
+                border: 1px solid rgba(255, 255, 255, .2);
+                border-radius: 999px;
+                color: #f3ffff;
+                font-size: 12px;
+                margin: 0;
+                padding: 7px 12px;
+            }
+
+            .home-ai-highlight-actions {
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 18px;
+                margin-top: 25px;
+            }
+
+            .home-ai-highlight-button {
+                background: #fff;
+                border-radius: 999px;
+                color: #164464;
+                font-size: 13px;
+                font-weight: 700;
+                padding: 13px 19px;
+                text-decoration: none;
+                transition: background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+            }
+
+            .home-ai-highlight-button:hover,
+            .home-ai-highlight-button:focus-visible {
+                background: #e4fbf4;
+                color: #164464;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+                transform: translateY(-2px);
+            }
+
+            .home-ai-highlight-button:focus-visible,
+            .home-ai-highlight-secondary:focus-visible {
+                outline: 3px solid #8ee8bf;
+                outline-offset: 4px;
+            }
+
+            .home-ai-highlight-secondary {
+                color: #fff;
+                font-size: 13px;
+                font-weight: 700;
+                text-decoration: none;
+            }
+
+            .home-ai-highlight-secondary:hover,
+            .home-ai-highlight-secondary:focus-visible {
+                text-decoration: underline;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8 {
+                align-items: stretch;
+                background: #fff;
+                border: 1px solid #e3ebf2;
+                border-radius: 16px;
+                box-shadow: 0 8px 24px rgba(25, 50, 75, .08);
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                min-height: 390px;
+                padding: 24px;
+                text-align: left;
+                transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8:hover,
+            .home-service-card.dt-sc-ico-content.type8:focus-within {
+                border-color: #18a9d1;
+                box-shadow: 0 16px 34px rgba(25, 78, 112, .16);
+                transform: translateY(-5px);
+            }
+
+            .home-service-card.dt-sc-ico-content.type8 .icon {
+                background: #f2f8fb;
+                border: 0;
+                border-radius: 11px;
+                display: block;
+                flex: 0 0 165px;
+                height: 165px;
+                margin: 0 0 22px;
+                overflow: hidden;
+                position: relative;
+                top: auto;
+                width: 100%;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8:hover .icon {
+                border: 0;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8 .icon img {
+                height: 100%;
+                object-fit: contain;
+                padding: 12px;
+                transition: opacity 220ms ease, transform 300ms ease, visibility 220ms ease;
+                width: 100%;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8 .icon img:only-child {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8:hover .icon img:only-child,
+            .home-service-card.dt-sc-ico-content.type8:focus-within .icon img:only-child {
+                opacity: 1;
+                transform: scale(1.06);
+                visibility: visible;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8 h4 {
+                border: 0;
+                margin: 0 0 12px;
+                min-height: 48px;
+                padding: 0;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8 h4 a {
+                color: #17334d;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1.35;
+                text-decoration: none;
+                transition: color 180ms ease;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8:hover h4 a,
+            .home-service-card.dt-sc-ico-content.type8:focus-within h4 a {
+                color: #078db7;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8 p {
+                color: #5b6b79;
+                flex: 1 0 auto;
+                line-height: 1.65;
+                margin: 0 0 18px;
+                padding: 0;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8 .read-more {
+                align-items: center;
+                color: #078db7;
+                display: inline-flex;
+                font-size: 14px;
+                font-weight: 700;
+                gap: 9px;
+                margin-top: auto;
+                text-decoration: none;
+                width: fit-content;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8 .read-more span {
+                transition: transform 180ms ease;
+            }
+
+            .home-service-card.dt-sc-ico-content.type8:hover .read-more span,
+            .home-service-card.dt-sc-ico-content.type8:focus-within .read-more span {
+                transform: translateX(4px);
+            }
+
+            .nevora-delivery-section.product-presentation-bg {
+                background:
+                    linear-gradient(105deg, rgba(9, 27, 45, .94), rgba(13, 45, 67, .88)),
+                    url("images/software-development-kenya.jpg") center 46% / cover no-repeat;
+                border: 0;
+                color: #fff;
+                height: auto;
+                overflow: hidden;
+                padding: 82px 0;
+                position: relative;
+            }
+
+            .nevora-delivery-section .container {
+                align-items: center;
+                display: grid;
+                gap: 56px;
+                grid-template-columns: minmax(0, 1.05fr) minmax(360px, .95fr);
+            }
+
+            .nevora-delivery-section .column {
+                float: none;
+                margin: 0;
+                padding: 0;
+                width: auto;
+            }
+
+            .nevora-delivery-copy .nevora-section-eyebrow {
+                color: #78ddf4;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: .16em;
+                margin: 0 0 15px;
+                text-transform: uppercase;
+            }
+
+            .nevora-delivery-copy h3,
+            .nevora-delivery-copy h4 {
+                color: #fff;
+            }
+
+            .nevora-delivery-copy h3 {
+                font-size: clamp(32px, 4vw, 48px);
+                line-height: 1.12;
+                margin: 0 0 16px;
+            }
+
+            .nevora-delivery-copy h4 {
+                font-size: 20px;
+                line-height: 1.4;
+                margin: 0 0 15px;
+            }
+
+            .nevora-delivery-copy > p {
+                color: rgba(255, 255, 255, .83);
+                font-size: 16px;
+                line-height: 1.75;
+                margin: 0 0 25px;
+            }
+
+            .nevora-service-list {
+                display: grid;
+                gap: 12px;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                list-style: none;
+                margin: 0 0 28px;
+                padding: 0;
+            }
+
+            .nevora-service-list li {
+                background: rgba(255, 255, 255, .08);
+                border: 1px solid rgba(255, 255, 255, .15);
+                border-radius: 9px;
+                color: #fff;
+                line-height: 1.45;
+                padding: 12px 14px;
+            }
+
+            .nevora-service-list .fa {
+                color: #75d8ef;
+                margin-right: 8px;
+            }
+
+            .nevora-delivery-copy .dt-sc-button.large {
+                background: #1ab5dc;
+                border: 0;
+                border-radius: 5px;
+                color: #08243a;
+                font-weight: 700;
+                padding: 0 58px 0 24px;
+            }
+
+            .nevora-delivery-copy .dt-sc-button.large:hover {
+                background: #fff;
+                color: #08243a;
+            }
+
+            .nevora-process-panel {
+                background: rgba(255, 255, 255, .97);
+                border: 1px solid rgba(255, 255, 255, .55);
+                border-radius: 16px;
+                box-shadow: 0 22px 60px rgba(0, 0, 0, .22);
+                color: #17334d;
+                padding: 30px;
+            }
+
+            .nevora-process-panel h4 {
+                color: #17334d;
+                font-size: 22px;
+                margin: 0 0 8px;
+            }
+
+            .nevora-process-panel > p {
+                color: #637485;
+                line-height: 1.6;
+                margin: 0 0 22px;
+            }
+
+            .nevora-process-list {
+                counter-reset: nevora-step;
+                display: grid;
+                gap: 0;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nevora-process-list li {
+                align-items: flex-start;
+                border-top: 1px solid #e6edf2;
+                counter-increment: nevora-step;
+                display: grid;
+                gap: 14px;
+                grid-template-columns: 36px minmax(0, 1fr);
+                padding: 15px 0;
+            }
+
+            .nevora-process-list li::before {
+                align-items: center;
+                background: #e8f7fb;
+                border-radius: 50%;
+                color: #078db7;
+                content: counter(nevora-step, decimal-leading-zero);
+                display: flex;
+                font-size: 12px;
+                font-weight: 700;
+                height: 34px;
+                justify-content: center;
+                width: 34px;
+            }
+
+            .nevora-process-list strong {
+                color: #17334d;
+                display: block;
+                margin: 0 0 4px;
+            }
+
+            .nevora-process-list span {
+                color: #637485;
+                display: block;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            .nevora-founder-message {
+                background: #f4f8fb;
+                border-left: 4px solid #16a9d1;
+                border-radius: 0 10px 10px 0;
+                padding: 22px;
+            }
+
+            .nevora-founder-profile {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                margin: 0 0 22px;
+                text-align: center;
+            }
+
+            .nevora-founder-profile img {
+                border: 6px solid #fff;
+                border-radius: 50%;
+                box-sizing: border-box;
+                display: block;
+                box-shadow: 0 0 0 1px #e4ebf0, 0 5px 18px rgba(23, 51, 77, .12);
+                flex: 0 0 180px;
+                height: 180px;
+                max-width: none;
+                object-fit: cover;
+                object-position: center 22%;
+                width: 180px;
+            }
+
+            .nevora-founder-profile > div {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .nevora-founder-message h4 {
+                color: #17334d;
+                font-size: 21px;
+                line-height: 1.35;
+                margin: 0 0 8px;
+            }
+
+            .nevora-founder-message .nevora-founder-role {
+                color: #748191;
+                font-size: 15px;
+                font-style: italic;
+                font-weight: 600;
+                line-height: 1.5;
+                margin: 0;
+            }
+
+            .nevora-founder-message > p:not(.nevora-founder-role) {
+                color: #526575;
+                font-size: 14px;
+                line-height: 1.65;
+                margin: 0 0 14px;
+                text-align: justify;
+            }
+
+            .nevora-founder-message .nevora-founder-quote {
+                border-top: 1px solid #dce7ee;
+                color: #17334d;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 1.6;
+                margin: 18px 0 0;
+                padding-top: 16px;
+            }
+
+            .recent-projects-section .container {
+                overflow: hidden;
+            }
+
+            .recent-projects-heading {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 28px;
+            }
+
+            .recent-projects-heading .hr-title {
+                flex: 1;
+                margin: 0;
+            }
+
+            .recent-projects-heading .hr-title h2 {
+                margin-bottom: 0;
+            }
+
+            .recent-projects-controls {
+                display: flex;
+                gap: 10px;
+                margin-left: 20px;
+            }
+
+            .recent-projects-controls button {
+                align-items: center;
+                background: #fff;
+                border: 1px solid #d5e1e9;
+                border-radius: 50%;
+                color: #17334d;
+                cursor: pointer;
+                display: inline-flex;
+                height: 42px;
+                justify-content: center;
+                transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+                width: 42px;
+            }
+
+            .recent-projects-controls button:hover:not(:disabled),
+            .recent-projects-controls button:focus-visible {
+                background: #078db7;
+                border-color: #078db7;
+                color: #fff;
+            }
+
+            .recent-projects-controls button:disabled {
+                cursor: default;
+                opacity: .42;
+            }
+
+            .recent-projects-controls .fa {
+                border-right: 2px solid currentColor;
+                border-top: 2px solid currentColor;
+                display: block;
+                font-size: 0;
+                height: 8px;
+                transform: rotate(45deg);
+                width: 8px;
+            }
+
+            .recent-projects-controls .fa-angle-left {
+                transform: rotate(-135deg);
+            }
+
+            .recent-projects-controls button:focus-visible {
+                outline: 3px solid rgba(7, 141, 183, .35);
+                outline-offset: 2px;
+            }
+
+            .recent-projects-viewport {
+                overflow-x: auto;
+                overscroll-behavior-inline: contain;
+                scrollbar-width: none;
+                scroll-behavior: smooth;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .recent-projects-viewport::-webkit-scrollbar {
+                display: none;
+            }
+
+            .recent-projects-track {
+                display: flex;
+                gap: 24px;
+            }
+
+            .recent-projects-track .portfolio {
+                float: none;
+                flex: 0 0 calc((100% - 48px) / 3);
+                margin: 0;
+                scroll-snap-align: start;
+                width: auto;
+            }
+
+            .recent-projects-track .portfolio-thumb {
+                aspect-ratio: 3 / 2;
+                overflow: hidden;
+            }
+
+            .recent-projects-track .portfolio-thumb > img {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+
+            .recent-projects-track .portfolio-detail {
+                min-height: 104px;
+            }
+
+            @media (max-width: 900px) {
+                .recent-projects-track .portfolio {
+                    flex-basis: calc((100% - 24px) / 2);
+                }
+            }
+
+            @media (max-width: 600px) {
+                .recent-projects-heading {
+                    align-items: flex-start;
+                }
+
+                .recent-projects-heading .hr-title h2 {
+                    font-size: 24px;
+                    line-height: 1.25;
+                }
+
+                .recent-projects-controls {
+                    flex-shrink: 0;
+                    margin-left: 12px;
+                }
+
+                .recent-projects-controls button {
+                    height: 38px;
+                    width: 38px;
+                }
+
+                .recent-projects-track {
+                    gap: 16px;
+                }
+
+                .recent-projects-track .portfolio {
+                    flex-basis: 88%;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .recent-projects-viewport {
+                    scroll-behavior: auto;
+                }
+            }
+
+            @media (max-width: 1100px) {
+                .home-service-grid {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+
+                .home-ai-highlight {
+                    margin-left: 24px;
+                    margin-right: 24px;
+                }
+
+                .nevora-delivery-section .container {
+                    gap: 36px;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .home-ai-highlight {
+                    grid-template-columns: minmax(0, 1fr);
+                }
+
+            }
+
+            @media (max-width: 600px) {
+                .home-service-grid {
+                    grid-template-columns: minmax(0, 1fr);
+                    gap: 22px;
+                }
+
+                .home-ai-highlight {
+                    margin-left: 18px;
+                    margin-right: 18px;
+                    padding: 26px;
+                }
+
+                .home-service-card.dt-sc-ico-content.type8 {
+                    min-height: 0;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .nevora-delivery-section.product-presentation-bg {
+                    padding: 58px 0;
+                }
+
+                .nevora-delivery-section .container {
+                    grid-template-columns: minmax(0, 1fr);
+                    gap: 32px;
+                }
+
+                .nevora-delivery-copy h3 {
+                    font-size: 34px;
+                }
+            }
+
+            @media (max-width: 420px) {
+                .nevora-service-list {
+                    grid-template-columns: minmax(0, 1fr);
+                }
+
+                .nevora-process-panel {
+                    padding: 22px;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .home-service-card,
+                .home-service-card *,
+                .home-service-card::before,
+                .home-service-card::after {
+                    transition-duration: .01ms !important;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .home-intro-cards .entry-post {
+                    height: auto;
+                }
+            }
+
+            .site-process-map {
+                background: #f4f7fa;
+                border-left: 4px solid #01a8df;
+                color: #335b88;
+                font-weight: 700;
+                padding: 24px;
+            }
+
+            .nevora-hours-process {
+                background:
+                    linear-gradient(115deg, rgba(9, 27, 45, .93), rgba(12, 43, 66, .86)),
+                    url("images/6sal6aq4owi-1024x656.jpg") center 48% / cover no-repeat;
+                color: #fff;
+                padding: 78px 0;
+            }
+
+            .nevora-hours-process .container {
+                float: none;
+            }
+
+            .nevora-hours-heading {
+                margin: 0 auto 38px;
+                max-width: 780px;
+                text-align: center;
+            }
+
+            .nevora-hours-heading .eyebrow {
+                color: #78ddf4;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: .16em;
+                margin: 0 0 12px;
+                text-transform: uppercase;
+            }
+
+            .nevora-hours-heading h2 {
+                color: #fff;
+                font-size: clamp(30px, 4vw, 44px);
+                line-height: 1.15;
+                margin: 0 0 14px;
+            }
+
+            .nevora-hours-heading > p:last-child {
+                color: rgba(255, 255, 255, .82);
+                font-size: 16px;
+                line-height: 1.7;
+                margin: 0;
+            }
+
+            .nevora-hours-grid {
+                display: grid;
+                gap: 26px;
+                grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+            }
+
+            .nevora-info-card {
+                background: rgba(255, 255, 255, .97);
+                border: 1px solid rgba(255, 255, 255, .65);
+                border-radius: 16px;
+                box-shadow: 0 20px 52px rgba(0, 0, 0, .2);
+                color: #17334d;
+                overflow: hidden;
+            }
+
+            .nevora-info-card-content {
+                padding: 28px;
+            }
+
+            .nevora-info-card h3 {
+                color: #17334d;
+                font-size: 23px;
+                line-height: 1.3;
+                margin: 0 0 12px;
+            }
+
+            .nevora-info-card .card-intro {
+                color: #637485;
+                font-size: 14px;
+                line-height: 1.65;
+                margin: 0 0 20px;
+            }
+
+            .nevora-hours-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nevora-hours-list li {
+                align-items: center;
+                border-top: 1px solid #e6edf2;
+                color: #526575;
+                display: flex;
+                gap: 12px;
+                justify-content: space-between;
+                line-height: 1.5;
+                padding: 14px 0;
+            }
+
+            .nevora-hours-list li strong {
+                color: #17334d;
+                font-weight: 700;
+            }
+
+            .nevora-hours-list li span {
+                text-align: right;
+            }
+
+            .nevora-hours-note {
+                background: #eef8fb;
+                border-left: 3px solid #16a9d1;
+                border-radius: 0 7px 7px 0;
+                color: #526575;
+                font-size: 13px;
+                line-height: 1.65;
+                margin: 15px 0 0;
+                padding: 13px 15px;
+            }
+
+            .nevora-hours-note strong {
+                color: #17334d;
+            }
+
+            .nevora-process-image {
+                display: block;
+                height: 190px;
+                object-fit: cover;
+                object-position: center 42%;
+                width: 100%;
+            }
+
+            .nevora-process-list-full {
+                counter-reset: delivery-step;
+                display: grid;
+                gap: 0 18px;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nevora-process-list-full li {
+                align-items: flex-start;
+                border-top: 1px solid #e6edf2;
+                counter-increment: delivery-step;
+                display: grid;
+                gap: 11px;
+                grid-template-columns: 32px minmax(0, 1fr);
+                padding: 13px 0;
+            }
+
+            .nevora-process-list-full li::before {
+                align-items: center;
+                background: #e8f7fb;
+                border-radius: 50%;
+                color: #078db7;
+                content: counter(delivery-step, decimal-leading-zero);
+                display: flex;
+                font-size: 11px;
+                font-weight: 700;
+                height: 30px;
+                justify-content: center;
+                width: 30px;
+            }
+
+            .nevora-process-list-full strong {
+                color: #17334d;
+                display: block;
+                font-size: 14px;
+                line-height: 1.45;
+                margin: 0 0 4px;
+            }
+
+            .nevora-process-list-full span {
+                color: #637485;
+                display: block;
+                font-size: 12px;
+                line-height: 1.55;
+            }
+
+            .nevora-process-commitment {
+                border-top: 1px solid #e6edf2;
+                color: #526575;
+                font-size: 13px;
+                font-style: italic;
+                line-height: 1.65;
+                margin: 10px 0 0;
+                padding-top: 15px;
+            }
+
+            .nevora-process-commitment strong {
+                color: #078db7;
+                font-style: normal;
+            }
+
+            @media (max-width: 900px) {
+                .nevora-hours-grid {
+                    grid-template-columns: minmax(0, 1fr);
+                }
+            }
+
+            @media (max-width: 600px) {
+                .nevora-hours-process {
+                    padding: 56px 0;
+                }
+
+                .nevora-hours-heading {
+                    margin-bottom: 26px;
+                }
+
+                .nevora-info-card-content {
+                    padding: 22px;
+                }
+
+                .nevora-process-list-full {
+                    grid-template-columns: minmax(0, 1fr);
+                }
+
+                .nevora-process-image {
+                    height: 160px;
+                }
+            }
+
+            #footer .nevora-footer-contact p {
+                align-items: flex-start;
+                display: flex;
+                gap: 10px;
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+
+            #footer .nevora-footer-contact p > i {
+                color: #78ddf4;
+                flex: 0 0 16px;
+                margin-top: 4px;
+                text-align: center;
+            }
+
+            #footer .nevora-footer-contact p a {
+                overflow-wrap: anywhere;
+            }
+
+            #footer .nevora-footer-intro {
+                color: #b4c3d0;
+                font-size: 13px;
+                line-height: 1.7;
+                margin: 0 0 16px;
+            }
+
+            #footer .nevora-social-channels {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                list-style: none;
+                margin: 0 0 20px;
+                padding: 0;
+            }
+
+            #footer .nevora-social-channels li {
+                border: 1px solid rgba(255, 255, 255, .22);
+                border-radius: 20px;
+                color: #e0e9ef;
+                font-size: 12px;
+                margin: 0;
+                padding: 6px 10px;
+            }
+
+            #footer .nevora-social-channels li span {
+                align-items: center;
+                display: inline-flex;
+                font-size: 14px;
+                justify-content: center;
+                margin-right: 5px;
+                min-width: 14px;
+            }
+
+            #footer .nevora-social-channels .nevora-x-icon {
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+            }
+
+            #footer .nevora-newsletter-note {
+                color: #9fb0bf;
+                font-size: 11px;
+                line-height: 1.55;
+                margin-top: 10px;
+            }
+
+            @media (max-width: 767px) {
+            }
+        </style>
+        </head>
+    <body>
+        <!-- **Wrapper** -->
+        <div class="wrapper">
+            <div class="inner-wrapper">
+                <div id="header-wrapper">
+                    <!-- **Header** -->
+                    <header class="header nevora-site-header">
+                        <div class="container">
+                            <!-- **Logo - End** -->
+                            <div id="logo">
+                                <a href="index.html" title="NEVORA Technologies">
+                                    <img src="images/logo@2x.webp" alt="NEVORA Technologies"/>
+                                </a>
+                            </div>
+                            <!-- **Logo - End** -->
+                            <div id="menu-container">
+                                <!-- **Nav - Starts**-->
+                                <nav id="main-menu">
+                                    <div id="dt-menu-toggle" class="dt-menu-toggle">
+                                        Menu
+                                <span class="dt-menu-toggle-icon"></span>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="current_page_item menu-item-simple-parent">
+                                            <a href="index.html">Home</a>
+                                            <a class="dt-menu-expand">+</a>
+                                        </li>
+                                        <li class="menu-item-simple-parent">
+                                            <a href="about-us.html">The Company</a>
+                                        </li>
+                                        <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0">
+                                            <a href="#l">Our Services</a>
+                                            <div class="megamenu-child-container">
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item-with-widget-area">
+                                                        <a href="#">Design & Development</a>
+                                                        <br>
+                                                        <div class="menu-item-widget-area-container">
+                                                            <ul>
+                                                                <li class="widget widget_text">
+                                                                    <div class="textwidget">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="web-design-development.html">Web Development</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="ecommerce-website-design.html">eCommerce Web Development</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="web-maintenance.html">Web Maintenance Services</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="domain-hosting.html">Domain & Web Hosting</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="mobile-app-development-company-in-kenya.html">Mobile App Development</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="property-management-software-system-solution-in-kenya.html">Real Estate Property Management System</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item-with-widget-area">
+                                                        <a href="#">Software Solutions</a>
+                                                        <br>
+                                                        <div class="menu-item-widget-area-container">
+                                                            <ul>
+                                                                <li class="widget widget_text">
+                                                                    <div class="textwidget">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="software-solutions.html">Software Development</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="ai-automation-cybersecurity.html">AI, Automation &amp; Cybersecurity</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="manufacturing-erp-system-in-kenya.html">Manufacturing ERP System</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="wholesale-retail-and-distribution-software-in-kenya.html">Wholesale & Retail Software</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="hospital-management-system-in-kenya.html">Hospital Management System</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="hotel-management-system-in-kenya.html">Hotel Management System</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="school-management-system-in-kenya.html">School Management System </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="pharmacy-and-chemist-software-in-kenya.html">Pharmacy & Chemist Software</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="automated-customesd.html">Automated Custom ESD</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="erp-implementations.html">ERP Implementations</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item-with-widget-area">
+                                                        <a href="#">Corporate Identity</a>
+                                                        <br>
+                                                        <div class="menu-item-widget-area-container">
+                                                            <ul>
+                                                                <li class="widget widget_text">
+                                                                    <div class="textwidget">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="corporate-identity-design.html">Company Branding</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="radio-and-tv-advertisement-in-kenya.html">Advertising Agency</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="brochure-design.html">Company Brochure Design</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="print-advertising.html">Billboard Advertisement</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="logo-design.html">Company Logo Design</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item-with-widget-area">
+                                                        <a href="#">Online & Social Media</a>
+                                                        <br>
+                                                        <div class="menu-item-widget-area-container">
+                                                            <ul>
+                                                                <li class="widget widget_text">
+                                                                    <div class="textwidget">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="search-engine-optimization.html">Search Engine Optimization </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="email-marketing.html">Email Marketing</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="pay-per-click-marketing.html">Pay Per Click Marketing</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="social-media-marketing.html">Social Media Marketing</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="social-media-management-in-kenya.html">Social Media Management</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a class="dt-menu-expand">+</a>
+                                        </li>
+                                        <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0">
+                                            <a href="our-clients.html">Our Clients</a>
+                                        </li>
+                                        <li class="menu-item-megamenu-parent megamenu-5-columns-group menu-item-depth-0">
+                                            <a href="client-testimonial.html">Client Testimonials</a>
+                                        </li>
+                                        <li class="menu-item-simple-parent">
+                                            <a href="contact.html">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- **Nav - End**-->
+                            </div>
+                        </div>
+                    </header>
+                    <!-- **Header - End** -->
+                </div>
+                <!-- **Main - Starts** -->
+                <div id="main">
+                    <!-- **banner - Starts** -->
+                    <div class="banner">
+                        <section class="home-slider" aria-label="Featured technology solutions" aria-roledescription="carousel" data-home-slider>
+                            <div class="home-slider__slides" aria-live="off">
+                                <article class="home-slide home-slide--software is-active" data-home-slide aria-label="1 of 5" aria-roledescription="slide">
+                                    <div class="home-slide__content">
+                                        <p class="home-slide__eyebrow">Your digital transformation partner</p>
+                                        <h1 class="home-slide__title">Custom software. Built around your business.</h1>
+                                        <p class="home-slide__description">From ERP platforms to business applications, we turn day-to-day challenges into technology that works for you.</p>
+                                        <div class="home-slide__actions">
+                                            <a class="home-slide__button home-slide__button--primary" href="contact.html">Let’s build together</a>
+                                            <a class="home-slide__button home-slide__button--secondary" href="#recent-projects">Explore our work</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="home-slide home-slide--intelligence" data-home-slide aria-label="2 of 5" aria-roledescription="slide" aria-hidden="true">
+                                    <div class="home-slide__content">
+                                        <p class="home-slide__eyebrow">Super intelligence · Automation · Cybersecurity</p>
+                                        <h2 class="home-slide__title">Think smarter. Secure what matters.</h2>
+                                        <p class="home-slide__description">Bring intelligent automation and security-minded engineering together to help your organization work smarter, protect its digital operations and innovate with confidence.</p>
+                                        <div class="home-slide__actions">
+                                            <a class="home-slide__button home-slide__button--primary" href="ai-automation-cybersecurity.html">Explore AI &amp; security</a>
+                                            <a class="home-slide__button home-slide__button--secondary" href="contact.html?service=AI%20Automation%20and%20Cybersecurity#contact-form">Discuss your project</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="home-slide home-slide--enterprise" data-home-slide aria-label="3 of 5" aria-roledescription="slide" aria-hidden="true">
+                                    <div class="home-slide__content">
+                                        <p class="home-slide__eyebrow">ERP · Automation · Insight</p>
+                                        <h2 class="home-slide__title">Bring your business operations together.</h2>
+                                        <p class="home-slide__description">Connect your processes with practical systems for planning, inventory, finance and the work that keeps your business moving.</p>
+                                        <div class="home-slide__actions">
+                                            <a class="home-slide__button home-slide__button--primary" href="contact.html">Find your solution</a>
+                                            <a class="home-slide__button home-slide__button--secondary" href="#recent-projects">See recent projects</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="home-slide home-slide--web" data-home-slide aria-label="4 of 5" aria-roledescription="slide" aria-hidden="true">
+                                    <div class="home-slide__content">
+                                        <p class="home-slide__eyebrow">Websites · E-commerce · Digital experience</p>
+                                        <h2 class="home-slide__title">Make your website work harder.</h2>
+                                        <p class="home-slide__description">Give customers a clear, useful online experience that showcases your services and helps your business grow.</p>
+                                        <div class="home-slide__actions">
+                                            <a class="home-slide__button home-slide__button--primary" href="contact.html">Start a conversation</a>
+                                            <a class="home-slide__button home-slide__button--secondary" href="our-clients.html">Our clients</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="home-slide home-slide--mobile" data-home-slide aria-label="5 of 5" aria-roledescription="slide" aria-hidden="true">
+                                    <div class="home-slide__content">
+                                        <p class="home-slide__eyebrow">Mobile applications · Built for people</p>
+                                        <h2 class="home-slide__title">Put your services in your customers’ hands.</h2>
+                                        <p class="home-slide__description">We design and develop mobile experiences that make it easier to connect with your customers, wherever they are.</p>
+                                        <div class="home-slide__actions">
+                                            <a class="home-slide__button home-slide__button--primary" href="contact.html">Discuss your app</a>
+                                            <a class="home-slide__button home-slide__button--secondary" href="client-testimonial.html">Client stories</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="home-slider__controls">
+                                <div class="home-slider__navigation" aria-label="Carousel controls">
+                                    <button class="home-slider__arrow home-slider__previous" type="button" data-previous aria-label="Previous slide"><span></span></button>
+                                    <button class="home-slider__arrow home-slider__next" type="button" data-next aria-label="Next slide"><span></span></button>
+                                    <button class="home-slider__pause" type="button" data-pause aria-pressed="false" aria-label="Pause automatic slide rotation">Pause</button>
+                                </div>
+                                <div class="home-slider__dots" role="group" aria-label="Choose a slide">
+                                    <button class="home-slider__dot" type="button" data-slide-to="0" aria-label="Show slide 1" aria-current="true"></button>
+                                    <button class="home-slider__dot" type="button" data-slide-to="1" aria-label="Show slide 2" aria-current="false"></button>
+                                    <button class="home-slider__dot" type="button" data-slide-to="2" aria-label="Show slide 3" aria-current="false"></button>
+                                    <button class="home-slider__dot" type="button" data-slide-to="3" aria-label="Show slide 4" aria-current="false"></button>
+                                    <button class="home-slider__dot" type="button" data-slide-to="4" aria-label="Show slide 5" aria-current="false"></button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- **banner - Ends** -->
+                    <!-- **full-width-section - starts** -->
+                    <div class="intro-text type1">
+                        <div class="container">
+                            <div class="dt-sc-hr-invisible-very-small"></div>
+                            <div class="column dt-sc-two-third first">
+                                <h2>
+                                    ...We <strong>exist to</strong>
+                                    solving problems <strong>for our clients. </strong>
+                                </h2>
+                                <p>
+                                    <i>
+                                        Our creative minds are able to create and deploy technological solutions that meets and combats the ever growing challenges of running a company or business, in this fast-paced and ever evolving world of ours. We care about delivering valuable solutions for our clients. You need help building a software application? <strong>Contact us let's talk.</strong>
+                                    </i>
+                                </p>
+                            </div>
+                            <div class="column dt-sc-one-third">
+                                <a class="dt-sc-button large" href="contact.html">
+                                    Talk to us today <span class="fa fa-angle-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dt-sc-hr-invisible-very-small"></div>
+                    </div>
+                    <!-- **full-width-section - Ends** -->
+                    <div class="dt-sc-margin65"></div>
+                    <!-- **Full-width-section - Starts** -->
+                    <div class="full-width-section">
+                        <div class="dt-sc-margin50"></div>
+                        <div class="container home-intro-cards">
+                            <p class="middle-align" style="color:#01a8df;font-size:13px;font-weight:700;letter-spacing:.14em;margin-bottom:12px;text-transform:uppercase;">Technology that moves business forward.</p>
+                            <h2 class="aligncenter">Build smarter. Operate securely. Grow with confidence.</h2>
+                            <p class="middle-align">NEVORA Technologies partners with ambitious businesses to turn real operational challenges into lasting digital advantages. Founded in Kenya and built with a global outlook, we design and engineer tailored websites, applications, APIs, and business platforms around the way your organization works—not one-size-fits-all templates. We combine thoughtful software engineering with intelligent automation to simplify repetitive tasks, connect business processes, and give your team more time to focus on high-value work. Security, reliability, and usability inform our decisions from the start, helping you protect your customers and operate with confidence. From the first discovery conversation through launch and future improvements, we focus on measurable outcomes and solutions that can evolve as your business grows.</p>
+                            <div class="dt-sc-hr-invisible-small"></div>
+                            <div class="column dt-sc-one-third first animate" data-animation="fadeInDown" data-delay="100">
+                                <!-- **entry-post - Starts** -->
+                                <article class="entry-post">
+                                    <div class="entry-meta">
+                                        <div class="date">
+                                            <p>
+                                                <span>1</span>
+                                            </p>
+                                        </div>
+                                        <div class="post-comments">
+                                            <a href="#">
+                                                <span class="fa fa-angle-double-right"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="entry-post-content">
+                                        <div class="entry-thumb">
+                                            <a href="about-us.html">
+                                                <img src="images/let-us-work-for-you.jpg" alt="NEVORA technology team collaborating on a client project"/>
+                                            </a>
+                                        </div>
+                                        <div class="entry-detail">
+                                            <h5>
+                                                <a href="about-us.html">About Our Company </a>
+                                            </h5>
+                                            <p>We partner with you from first conversation to launch, shaping practical digital solutions around your goals, customers, and day-to-day work.</p>
+                                            <a class="dt-sc-button small" href="about-us.html">
+                                                Read More <span class="fa fa-long-arrow-right"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- **entry-post - Ends** -->
+                            </div>
+                            <div class="column dt-sc-one-third animate" data-animation="fadeInUp" data-delay="100">
+                                <!-- **entry-post - Starts** -->
+                                <article class="entry-post">
+                                    <div class="entry-meta">
+                                        <div class="date">
+                                            <p>
+                                                <span>2</span>
+                                            </p>
+                                        </div>
+                                        <div class="post-comments">
+                                            <a href="#">
+                                                <span class="fa fa-angle-double-right"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="entry-post-content">
+                                        <div class="entry-thumb">
+                                            <a href="about-us.html">
+                                                <img src="images/why-hire-us.jpg" alt="Software developer working on a digital solution"/>
+                                            </a>
+                                        </div>
+                                        <div class="entry-detail">
+                                            <h5>
+                                                <a href="about-us.html">Who We Are </a>
+                                            </h5>
+                                            <p>We are a Kenya-founded team of technologists combining software engineering, thoughtful design, automation, and security to solve meaningful business challenges.</p>
+                                            <a class="dt-sc-button small" href="about-us.html">
+                                                Read More <span class="fa fa-long-arrow-right"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- **entry-post - Ends** -->
+                            </div>
+                            <div class="column dt-sc-one-third animate" data-animation="fadeInDown" data-delay="100">
+                                <!-- **entry-post - Starts** -->
+                                <article class="entry-post">
+                                    <div class="entry-meta">
+                                        <div class="date">
+                                            <p>
+                                                <span>3</span>
+                                            </p>
+                                        </div>
+                                        <div class="post-comments">
+                                            <a href="about-us.html">
+                                                <span class="fa fa-angle-double-right"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="entry-post-content">
+                                        <div class="entry-thumb">
+                                            <a href="about-us.html">
+                                                <img src="images/software-development-companies-in-kenya.jpg" alt="Software engineering workstation for building business technology"/>
+                                            </a>
+                                        </div>
+                                        <div class="entry-detail">
+                                            <h5>
+                                                <a href="about-us.html">Why Hire NEVORA </a>
+                                            </h5>
+                                            <p>Work with a responsive technology partner focused on clear communication, secure engineering, measurable outcomes, and solutions that grow with your business.</p>
+                                            <a class="dt-sc-button small" href="about-us.html">
+                                                Read More <span class="fa fa-long-arrow-right"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- **entry-post - Ends** -->
+                            </div>
+                            <div class="dt-sc-margin70"></div>
+                        </div>
+                    </div>
+                    <!-- **Full-width-section - Ends** -->
+                    <!-- **Full-width-section - Starts** -->
+                    <div class="full-width-section">
+                        <div class="container">
+                            <!-- **intro-text type3 - Starts** -->
+                            <div class="intro-text type3">
+                                <div class="intro-text-content">
+                                    <h2>
+                                        <i>
+                                            We engineer intelligent digital solutions around your business. <br>Explore our expertise across software, automation, and secure technology.
+                                        </i>
+                                    </h2>
+                                    <a href="software-solutions.html" class="dt-sc-button medium">
+                                        Explore Our Services<span class="fa fa-arrow-circle-right"></span>
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <!-- **intro-text type3 - Ends** -->
+                        </div>
+                    </div>
+                    <!-- **Full-width-section - Ends** -->
+                    <!-- **Full-width-section - Starts** -->
+                    <div class="full-width-section">
+                        <div class="dt-sc-margin100"></div>
+                        <div class="container home-service-grid">
+                            <div class="column dt-sc-one-fourth first animate" data-animation="fadeInUp" data-delay="100">
+                                <div class="dt-sc-ico-content type8 home-service-card">
+                                    <div class="icon">
+                                        <img src="images/erp-software-in-kenya.jpg" alt="ERP software dashboard"/>
+                                        <img src="images/enterprise-resource-planning-erp-in-kenya.jpg" alt=""/>
+                                    </div>
+                                    <h4>
+                                        <a href="erp-implementations.html">ERP &amp; Business Management</a>
+                                    </h4>
+                                    <p>Connect finance, inventory, purchasing, and daily workflows in a business system tailored to how your organization operates.</p>
+                                    <a class="read-more" href="erp-implementations.html">
+                                        Read More <span class="fa fa-long-arrow-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column dt-sc-one-fourth animate" data-animation="fadeInDown" data-delay="100">
+                                <div class="dt-sc-ico-content type8 home-service-card">
+                                    <div class="icon">
+                                        <img src="images/sliders/hospital.png" alt="Hospital management system interface"/>
+                                        <img src="images/hospital-hover.png" alt="tablet"/>
+                                    </div>
+                                    <h4>
+                                        <a href="hospital-management-system-in-kenya.html">Hospital &amp; Clinic Management</a>
+                                    </h4>
+                                    <p>Coordinate patient records, appointments, billing, and clinical workflows with dependable tools that help care teams work efficiently.</p>
+                                    <a class="read-more" href="hospital-management-system-in-kenya.html">
+                                        Read More <span class="fa fa-long-arrow-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column dt-sc-one-fourth animate" data-animation="fadeInUp" data-delay="100">
+                                <div class="dt-sc-ico-content type8 home-service-card">
+                                    <div class="icon">
+                                        <img src="images/sliders/manufucturing.png" alt="Manufacturing workflow illustration"/>
+                                        <img src="images/kenya-manufacturing-software.jpg" alt="admin"/>
+                                    </div>
+                                    <h4>
+                                        <a href="manufacturing-erp-system-in-kenya.html">Manufacturing ERP</a>
+                                    </h4>
+                                    <p>Plan production, manage stock, and track operations from raw materials through delivery with software built around your manufacturing workflow.</p>
+                                    <a class="read-more" href="manufacturing-erp-system-in-kenya.html">
+                                        Read More <span class="fa fa-long-arrow-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column dt-sc-one-fourth animate" data-animation="fadeInDown" data-delay="100">
+                                <div class="dt-sc-ico-content type8 home-service-card">
+                                    <div class="icon">
+                                        <img src="images/school-management-system-hover.png" alt="School management software in use"/>
+                                    </div>
+                                    <h4>
+                                        <a href="school-management-system-in-kenya.html">School Management</a>
+                                    </h4>
+                                    <p>Simplify admissions, attendance, grading, fees, and communication with one platform for school administrators, teachers, learners, and families.</p>
+                                    <a class="read-more" href="school-management-system-in-kenya.html">
+                                        Read More <span class="fa fa-long-arrow-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-sc-hr-invisible"></div>
+                    </div>
+                    <!-- **Full-width-section - Ends** -->
+                    <div class="full-width-section">
+                        <div class="dt-sc-margin50"></div>
+                        <div class="container home-service-grid">
+                            <div class="column dt-sc-one-fourth first animate" data-animation="fadeInUp" data-delay="100">
+                                <div class="dt-sc-ico-content type8 home-service-card">
+                                    <div class="icon">
+                                        <img src="images/hotel-management-software-in-kenya.jpg" alt="Hotel management software interface"/>
+                                    </div>
+                                    <h4>
+                                        <a href="hotel-management-system-in-kenya.html">Hotel &amp; Hospitality Management</a>
+                                    </h4>
+                                    <p>Manage reservations, front-desk operations, guest services, and property workflows with software designed to keep hospitality running smoothly.</p>
+                                    <a class="read-more" href="hotel-management-system-in-kenya.html">
+                                        Read More <span class="fa fa-long-arrow-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column dt-sc-one-fourth animate" data-animation="fadeInDown" data-delay="100">
+                                <div class="dt-sc-ico-content type8 home-service-card">
+                                    <div class="icon">
+                                        <img src="images/pharmacy-and-chemist-software-hover.png" alt="Pharmacy management software"/>
+                                        <img src="images/pharmacy-and-chemist-software.png" alt=""/>
+                                    </div>
+                                    <h4>
+                                        <a href="pharmacy-and-chemist-software-in-kenya.html">Pharmacy &amp; Chemist Management</a>
+                                    </h4>
+                                    <p>Manage inventory, prescriptions, sales, and purchasing in a dependable system built for pharmacies and chemists.</p>
+                                    <a class="read-more" href="pharmacy-and-chemist-software-in-kenya.html">
+                                        Read More <span class="fa fa-long-arrow-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column dt-sc-one-fourth animate" data-animation="fadeInUp" data-delay="100">
+                                <div class="dt-sc-ico-content type8 home-service-card">
+                                    <div class="icon">
+                                        <img src="images/mobile-app-development-hover.png" alt="Mobile app development team"/>
+                                        <img src="images/mobile-app-development-kenya.jpg" alt=""/>
+                                    </div>
+                                    <h4>
+                                        <a href="mobile-app-development-company-in-kenya.html">Mobile App Development</a>
+                                    </h4>
+                                    <p>Create intuitive iOS and Android apps that connect your services with customers and support your business goals.</p>
+                                    <a class="read-more" href="mobile-app-development-company-in-kenya.html">
+                                        Read More <span class="fa fa-long-arrow-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column dt-sc-one-fourth animate" data-animation="fadeInDown" data-delay="100">
+                                <div class="dt-sc-ico-content type8 home-service-card">
+                                    <div class="icon">
+                                        <img src="images/web-development-hover.png" alt="Web development technology illustration"/>
+                                        <img src="images/software-development-companies-in-kenya.jpg" alt=""/>
+                                    </div>
+                                    <h4>
+                                        <a href="web-design-development.html">Web Design &amp; Development</a>
+                                    </h4>
+                                    <p>Launch accessible, responsive websites and web applications that communicate your value and work smoothly across devices.</p>
+                                    <a class="read-more" href="web-design-development.html">
+                                        Read More <span class="fa fa-long-arrow-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-sc-hr-invisible"></div>
+                    </div>
+                    <!-- **Full-width-section - Ends** -->
+                    <section class="container home-ai-highlight" aria-labelledby="home-ai-highlight-title">
+                        <div class="home-ai-highlight-copy">
+                            <p class="home-ai-highlight-kicker">Super intelligence · Automation · Cybersecurity</p>
+                            <h2 id="home-ai-highlight-title">Make your business smarter, faster and safer.</h2>
+                            <p>Bring intelligent systems, connected workflows and security together to turn everyday challenges into better decisions and more resilient operations.</p>
+                            <ul class="home-ai-highlight-tags" aria-label="AI and security services">
+                                <li>Super intelligence</li>
+                                <li>Intelligent automation</li>
+                                <li>Cybersecurity engineering</li>
+                            </ul>
+                            <div class="home-ai-highlight-actions">
+                                <a class="home-ai-highlight-button" href="ai-automation-cybersecurity.html">Discover AI &amp; cybersecurity <span aria-hidden="true">→</span></a>
+                                <a class="home-ai-highlight-secondary" href="contact.html?service=AI%20Automation%20and%20Cybersecurity#contact-form">Discuss your project</a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- **Full-width-section - Starts** -->
+                    <section class="full-width-section product-presentation-bg nevora-delivery-section" aria-labelledby="nevora-delivery-title">
+                        <!-- **container - Starts** -->
+                        <div class="container">
+                            <div class="column nevora-delivery-copy">
+                                <p class="nevora-section-eyebrow">Thoughtful technology. Measurable progress.</p>
+                                <h3 id="nevora-delivery-title">We turn complex business needs into technology that works.</h3>
+                                <h4>Built around your goals. Designed to grow with you.</h4>
+                                <p>NEVORA brings software engineering, intelligent automation, and security together to solve real operational challenges. From the first conversation to launch and ongoing support, we focus on practical solutions that create lasting value.</p>
+                                <ul class="nevora-service-list" aria-label="NEVORA services">
+                                    <li><span class="fa fa-code" aria-hidden="true"></span>Custom software, websites &amp; apps</li>
+                                    <li><span class="fa fa-cogs" aria-hidden="true"></span>AI, automation &amp; intelligent tools</li>
+                                    <li><span class="fa fa-shield" aria-hidden="true"></span>Cybersecurity &amp; IT consulting</li>
+                                    <li><span class="fa fa-cloud" aria-hidden="true"></span>SaaS platforms &amp; digital products</li>
+                                </ul>
+                                <a href="contact.html" class="dt-sc-button large">
+                                    Talk to NEVORA <span class="fa fa-angle-right"></span>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <div class="nevora-process-panel">
+                                    <h4>From first conversation to real-world impact</h4>
+                                    <p>A clear, collaborative process keeps the right people involved at every stage.</p>
+                                    <ol class="nevora-process-list">
+                                        <li><div><strong>Discover &amp; understand</strong><span>Learn your goals, users, workflows, constraints, and success measures.</span></div></li>
+                                        <li><div><strong>Plan &amp; design</strong><span>Shape the solution, experience, architecture, and delivery roadmap together.</span></div></li>
+                                        <li><div><strong>Build &amp; secure</strong><span>Develop, automate, and validate with quality, privacy, and security in mind.</span></div></li>
+                                        <li><div><strong>Launch &amp; improve</strong><span>Deploy with care, support your team, and keep improving as your needs evolve.</span></div></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- **container - Ends** -->
+                    </section>
+                    <!-- **Full-width-section - Ends** -->
+                    <div class="dt-sc-hr-invisible"></div>
+                    <!-- **Full-width-section - Starts** -->
+                    <div class="full-width-section">
+                        <div class="dt-sc-margin30"></div>
+                        <div class="container">
+                            <div class="column dt-sc-one-third first">
+                                <div class="hr-title">
+                                    <h3>Why Choose NEVORA?</h3>
+                                    <div class="title-sep"></div>
+                                </div>
+                                <!-- **dt-sc-toggle-frame-set - Starts** -->
+                                <div class="dt-sc-toggle-frame-set">
+                                    <h5 class="dt-sc-toggle-accordion active">
+                                        <a href="#">Our Vision</a>
+                                    </h5>
+                                    <div class="dt-sc-toggle-content">
+                                        <div class="block">To become a globally recognized technology company creating innovative, reliable, and accessible digital solutions that empower businesses and communities.</div>
+                                    </div>
+                                    <h5 class="dt-sc-toggle-accordion">
+                                        <a href="#">Our Mission</a>
+                                    </h5>
+                                    <div class="dt-sc-toggle-content">
+                                        <div class="block">To solve real-world problems through software engineering, intelligent automation, and secure technology—delivering practical solutions that create measurable value for our customers.</div>
+                                    </div>
+                                    <h5 class="dt-sc-toggle-accordion">
+                                        <a href="#">Our Core Values</a>
+                                    </h5>
+                                    <div class="dt-sc-toggle-content">
+                                        <div class="block">
+                                            <ul>
+                                                <li><strong>Innovation:</strong> Build practical solutions to meaningful problems.</li>
+                                                <li><strong>Security:</strong> Protect privacy and build reliable technology responsibly.</li>
+                                                <li><strong>Excellence:</strong> Deliver accessible, maintainable, high-quality work.</li>
+                                                <li><strong>Customer focus:</strong> Understand the challenge before shaping the solution.</li>
+                                                <li><strong>Global mindset:</strong> Create technology that can serve customers across borders.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- **dt-sc-toggle-frame-set - Ends** -->
+                            </div>
+                            <div class="column dt-sc-one-third">
+                                <div class="hr-title">
+                                    <h3>Software Solutions</h3>
+                                    <div class="title-sep"></div>
+                                </div>
+                                <ul class="dt-sc-icon-list">
+                                    <li class="animate" data-animation="fadeInUp" data-delay="350">
+                                        <a href="hotel-management-system-in-kenya.html">
+                                            <i class="fa fa-plus-circle"></i>
+                                            Hotel Management System
+                                        </a>
+                                    </li>
+                                    <li class="animate" data-animation="fadeInUp" data-delay="100">
+                                        <a href="hospital-management-system-in-kenya.html">
+                                            <i class="fa fa-plus-circle"></i>
+                                            Hospital Management System
+                                        </a>
+                                    </li>
+                                    <li class="animate" data-animation="fadeInUp" data-delay="250">
+                                        <a href="wholesale-retail-and-distribution-software-in-kenya.html">
+                                            <i class="fa fa-plus-circle"></i>
+                                            Wholasale & Retail Software
+                                        </a>
+                                    </li>
+                                    <li class="animate" data-animation="fadeInUp" data-delay="200">
+                                        <a href="manufacturing-erp-system-in-kenya.html">
+                                            <i class="fa fa-plus-circle"></i>
+                                            Manufacturing (ERP) Solution
+                                        </a>
+                                    </li>
+                                    <li class="animate" data-animation="fadeInUp" data-delay="150">
+                                        <a href="erp-implementations.html">
+                                            <i class="fa fa-plus-circle"></i>
+                                            Enterprise Resource Planning (ERP)
+                                        </a>
+                                    </li>
+                                    <li class="animate" data-animation="fadeInUp" data-delay="300">
+                                        <a href="school-management-system-in-kenya.html">
+                                            <i class="fa fa-plus-circle"></i>
+                                            School Management System
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column dt-sc-one-third">
+                                <div class="nevora-founder-message">
+                                    <div class="nevora-founder-profile">
+                                        <img src="images/Team-images/image4.webp" alt="Bahati Lusabe, Founder and Business Development at NEVORA Technologies"/>
+                                        <div>
+                                            <h4>Bahati Lusabe</h4>
+                                            <p class="nevora-founder-role">Founder &amp; Business Development | NEVORA Technologies</p>
+                                        </div>
+                                    </div>
+                                    <p>At NEVORA Technologies, we are committed to helping businesses overcome their unique challenges through innovative, reliable, and customized technology solutions. We work with forward-thinking organizations to design and develop software applications, digital products, platforms, and services that align with their business objectives.</p>
+                                    <p>When off-the-shelf software cannot meet your needs, we bridge the gap with tailored solutions. From manufacturing systems and production scheduling to workflow automation, business management platforms, and intelligent digital solutions, we build technology that streamlines operations, improves efficiency, and supports sustainable growth.</p>
+                                    <p>Our approach is built on understanding each client's challenges, collaborating closely with our partners, and delivering practical solutions that create lasting value.</p>
+                                    <p class="nevora-founder-quote">At NEVORA Technologies, we don't just build software—we engineer solutions that move businesses forward.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- **Full-width-section - Ends** -->
+                    <div class="dt-sc-hr-invisible-small"></div>
+                    <!-- **Full-width-section - Starts** -->
+                    <div class="full-width-section grey recent-projects-section" id="recent-projects">
+                        <div class="dt-sc-margin65"></div>
+                        <div class="container">
+                            <div class="recent-projects-heading">
+                                <div class="hr-title">
+                                    <h2>Recent Projects</h2>
+                                    <div class="title-sep"></div>
+                                </div>
+                                <div class="recent-projects-controls" role="group" aria-label="Recent project carousel controls">
+                                    <button type="button" data-projects-previous aria-label="Show previous projects">
+                                        <span class="fa fa-angle-left" aria-hidden="true"></span>
+                                    </button>
+                                    <button type="button" data-projects-next aria-label="Show next projects">
+                                        <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="recent-projects-viewport" data-projects-viewport tabindex="0" aria-label="Recent NEVORA projects">
+                                <div class="recent-projects-track">
+                            <div class="portfolio dt-sc-one-third column first">
+                                <!-- **portfolio-thumb - Starts** -->
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio-images/image001.webp" alt="NEVORA Technologies digital solutions project"/>
+                                    <div class="image-overlay">
+                                        <a class="zoom" href="images/portfolio-images/image001.webp" data-gal="prettyPhoto[gallery]">
+                                            <span class="fa fa-search"></span>
+                                        </a>
+                                        <a class="link" href="our-clients.html">
+                                            <span class="fa fa-link"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- **portfolio-thumb - Ends** -->
+                                <!-- **portfolio-detail - Starts** -->
+                                <div class="portfolio-detail">
+                                    <div class="views">
+                                        <span class="fa fa-check"></span>
+                                        <br/>
+                                        <a href="#">1</a>
+                                    </div>
+                                    <div class="portfolio-title">
+                                        <h5>
+                                            <a href="our-clients.html">NEVORA Technologies</a>
+                                        </h5>
+                                        <p>
+                                            Web applications and technology solutions
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- **portfolio-detail - Ends** -->
+                            </div>
+                            <div class="portfolio dt-sc-one-third column">
+                                <!-- **portfolio-thumb - Starts** -->
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio-images/image002.webp" alt="NEVIC telecom parts distributor platform"/>
+                                    <div class="image-overlay">
+                                        <a class="zoom" href="images/portfolio-images/image002.webp" data-gal="prettyPhoto[gallery]">
+                                            <span class="fa fa-search"></span>
+                                        </a>
+                                        <a class="link" href="our-clients.html">
+                                            <span class="fa fa-link"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- **portfolio-thumb - Ends** -->
+                                <!-- **portfolio-detail - Starts** -->
+                                <div class="portfolio-detail">
+                                    <div class="views">
+                                        <span class="fa fa-check"></span>
+                                        <br/>
+                                        <a href="#">2</a>
+                                    </div>
+                                    <div class="portfolio-title">
+                                        <h5>
+                                            <a href="our-clients.html">NEVIC</a>
+                                        </h5>
+                                        <p>Telecom parts distributor platform</p>
+                                    </div>
+                                </div>
+                                <!-- **portfolio-detail - Ends** -->
+                            </div>
+                            <div class="portfolio dt-sc-one-third column">
+                                <!-- **portfolio-thumb - Starts** -->
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio-images/image003.webp" alt="Kiliplanner resident reporting platform"/>
+                                    <div class="image-overlay">
+                                        <a class="zoom" href="images/portfolio-images/image003.webp" data-gal="prettyPhoto[gallery]">
+                                            <span class="fa fa-search"></span>
+                                        </a>
+                                        <a class="link" href="portfolio-detail.html">
+                                            <span class="fa fa-link"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- **portfolio-thumb - Ends** -->
+                                <!-- **portfolio-detail - Starts** -->
+                                <div class="portfolio-detail">
+                                    <div class="views">
+                                        <span class="fa fa-check"></span>
+                                        <br/>
+                                        <a href="#">3</a>
+                                    </div>
+                                    <div class="portfolio-title">
+                                        <h5>
+                                            <a href="our-clients.html">Kiliplanner</a>
+                                        </h5>
+                                        <p>
+                                            Anonymous resident reporting platform
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- **portfolio-detail - Ends** -->
+                            </div>
+                            <div class="portfolio dt-sc-one-third column">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio-images/image004.webp" alt="M-Hunter verified rental and property management platform"/>
+                                    <div class="image-overlay">
+                                        <a class="zoom" href="images/portfolio-images/image004.webp" data-gal="prettyPhoto[gallery]" aria-label="View M-Hunter project image"><span class="fa fa-search"></span></a>
+                                        <a class="link" href="our-clients.html" aria-label="Learn about NEVORA projects"><span class="fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-detail">
+                                    <div class="views"><span class="fa fa-check"></span><br/><a href="#">4</a></div>
+                                    <div class="portfolio-title">
+                                        <h5><a href="our-clients.html">M-Hunter</a></h5>
+                                        <p>Verified rentals and property management</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio dt-sc-one-third column">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio-images/image005.webp" alt="VELO smart energy and electricity monitoring mobile app concept"/>
+                                    <div class="image-overlay">
+                                        <a class="zoom" href="images/portfolio-images/image005.webp" data-gal="prettyPhoto[gallery]" aria-label="View VELO project image"><span class="fa fa-search"></span></a>
+                                        <a class="link" href="our-clients.html" aria-label="Learn about NEVORA projects"><span class="fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-detail">
+                                    <div class="views"><span class="fa fa-check"></span><br/><a href="#">5</a></div>
+                                    <div class="portfolio-title">
+                                        <h5><a href="our-clients.html">VELO</a></h5>
+                                        <p>Smart metering and energy monitoring app concept</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio dt-sc-one-third column">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio-images/image8.webp" alt="J.A.R.V.I.S. AI-powered security assistant and monitoring dashboard"/>
+                                    <div class="image-overlay">
+                                        <a class="zoom" href="images/portfolio-images/image8.webp" data-gal="prettyPhoto[gallery]" aria-label="View J.A.R.V.I.S. project image"><span class="fa fa-search"></span></a>
+                                        <a class="link" href="our-clients.html" aria-label="Learn about NEVORA projects"><span class="fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-detail">
+                                    <div class="views"><span class="fa fa-check"></span><br/><a href="#">6</a></div>
+                                    <div class="portfolio-title">
+                                        <h5><a href="our-clients.html">J.A.R.V.I.S.</a></h5>
+                                        <p>AI-powered security assistant and monitoring</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio dt-sc-one-third column">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio-images/image2.webp" alt="Mavuno Green Grid agriculture and market access platform"/>
+                                    <div class="image-overlay">
+                                        <a class="zoom" href="images/portfolio-images/image2.webp" data-gal="prettyPhoto[gallery]" aria-label="View Mavuno Green Grid project image"><span class="fa fa-search"></span></a>
+                                        <a class="link" href="our-clients.html" aria-label="Learn about NEVORA projects"><span class="fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-detail">
+                                    <div class="views"><span class="fa fa-check"></span><br/><a href="#">7</a></div>
+                                    <div class="portfolio-title">
+                                        <h5><a href="our-clients.html">Mavuno Green Grid</a></h5>
+                                        <p>Agriculture, logistics, storage, and market access</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio dt-sc-one-third column">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio-images/image26.webp" alt="BuildPay construction payroll management application"/>
+                                    <div class="image-overlay">
+                                        <a class="zoom" href="images/portfolio-images/image26.webp" data-gal="prettyPhoto[gallery]" aria-label="View BuildPay project image"><span class="fa fa-search"></span></a>
+                                        <a class="link" href="our-clients.html" aria-label="Learn about NEVORA projects"><span class="fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-detail">
+                                    <div class="views"><span class="fa fa-check"></span><br/><a href="#">8</a></div>
+                                    <div class="portfolio-title">
+                                        <h5><a href="our-clients.html">BuildPay</a></h5>
+                                        <p>Construction payroll, worker records, and reporting</p>
+                                    </div>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-sc-margin50"></div>
+                    </div>
+                    <!-- **Full-width-section - Ends** -->
+                    <!-- **Full-width-section - Starts** -->
+                    <section class="full-width-section nevora-hours-process" aria-labelledby="nevora-hours-title">
+                        <div class="container">
+                            <div class="nevora-hours-heading">
+                                <p class="eyebrow">NEVORA TECHNOLOGIES</p>
+                                <h2 id="nevora-hours-title">Business Hours &amp; Working Process</h2>
+                                <p>Clear communication and a thoughtful delivery process help us build technology that solves real business challenges—for clients in Kenya and around the world.</p>
+                            </div>
+                            <div class="nevora-hours-grid">
+                                <article class="nevora-info-card">
+                                    <div class="nevora-info-card-content">
+                                        <h3>Business Hours</h3>
+                                        <p class="card-intro">We schedule consultations and project conversations during our regular working hours, with flexibility for international time zones where possible.</p>
+                                        <ul class="nevora-hours-list">
+                                            <li><strong>Monday – Friday</strong><span>9:00 AM – 5:00 PM EAT</span></li>
+                                            <li><strong>Saturday</strong><span>10:00 AM – 1:00 PM EAT</span></li>
+                                            <li><strong>Sunday &amp; Public Holidays</strong><span>Closed</span></li>
+                                        </ul>
+                                        <p class="nevora-hours-note"><strong>Please note:</strong> These hours apply to consultations, project coordination, and administrative support. Delivery timelines and urgent support arrangements are agreed individually with each client.</p>
+                                    </div>
+                                </article>
+                                <article class="nevora-info-card">
+                                    <img class="nevora-process-image" src="images/why-hire-us.jpg" alt="Technology professional working on a software development project"/>
+                                    <div class="nevora-info-card-content">
+                                        <h3>How We Work</h3>
+                                        <p class="card-intro"><strong>Discover – Understand – Plan – Develop – Deliver.</strong> Our client-focused process takes a solution from the first conversation through launch and ongoing improvement.</p>
+                                        <ol class="nevora-process-list-full">
+                                            <li><div><strong>Discovery &amp; consultation</strong><span>Discuss your business, goals, challenges, and expectations.</span></div></li>
+                                            <li><div><strong>Requirements &amp; analysis</strong><span>Define the problem and the functional and technical requirements.</span></div></li>
+                                            <li><div><strong>Planning &amp; proposal</strong><span>Agree scope, solution, technology, timeline, deliverables, and budget.</span></div></li>
+                                            <li><div><strong>Design &amp; development</strong><span>Build and integrate the solution with regular feedback and collaboration.</span></div></li>
+                                            <li><div><strong>Testing &amp; quality assurance</strong><span>Check usability, reliability, security, functionality, and compatibility.</span></div></li>
+                                            <li><div><strong>Delivery &amp; deployment</strong><span>Launch or hand over the solution with agreed documentation and training.</span></div></li>
+                                            <li><div><strong>Support &amp; continuous improvement</strong><span>Provide agreed maintenance, troubleshooting, updates, and enhancements.</span></div></li>
+                                        </ol>
+                                        <p class="nevora-process-commitment"><strong>Our commitment:</strong> We start by understanding the problem, collaborate transparently, and deliver a solution shaped around your goals. NEVORA Technologies — Technology that moves business forward.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- **Full-width-section - Ends** -->
+                </div>
+                <!-- **Main - Ends** -->
+                <!-- **Full-width-section - Starts** -->
+                <div class="full-width-section grey">
+                    <!-- **container - Starts** -->
+                    <div class="container">
+                        <div class="dt-sc-margin45"></div>
+                        <p class="middle-align">
+                            We work with partners to deliver ERP software and implementation solutions in Kenya.
+                        </p>
+                        <div class="dt-sc-hr-invisible"></div>
+                        <div class="dt-sc-hr-invisible"></div>
+                    </div>
+                    <!-- **container - Ends** -->
+                </div>
+                <!-- **Full-width-section - Ends** -->
+                <!-- **Footer** -->
+                <footer id="footer">
+                    <div class="footer-widgets-wrapper">
+                        <div class="container">
+                            <div class="column dt-sc-one-third first">
+                                <aside class="widget widget_text nevora-footer-contact">
+                                    <h3 class="widget-title">Contact <span class="wlast">Us</span><span class="small-line"></span></h3>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i><span><strong>Phone:</strong> <a href="tel:+254769101739">+254 769 101 739</a></span></p>
+                                    <p><i class="fa fa-envelope" aria-hidden="true"></i><span><strong>Email:</strong> <a href="mailto:bahatilusabe@gmail.com">bahatilusabe@gmail.com</a></span></p>
+                                    <p><i class="fa fa-globe" aria-hidden="true"></i><span><strong>Website:</strong> <a href="https://www.nevora.tech/">www.nevora.tech</a></span></p>
+                                    <p><i class="fa fa-location-arrow" aria-hidden="true"></i><span><strong>Location:</strong> Kenya<br><strong>Markets:</strong> Kenya and international</span></p>
+                                </aside>
+                            </div>
+                            <div class="column dt-sc-one-third">
+                                <aside class="widget widget_tweetbox nevora-footer-connect">
+                                    <h3 class="widget-title">Connect <span class="wlast">With Us</span><span class="small-line"></span></h3>
+                                    <p class="nevora-footer-intro">Follow NEVORA Technologies for project updates, technology insights, and company news.</p>
+                                    <ul class="nevora-social-channels" aria-label="Social channels">
+                                        <li><span class="fa fa-linkedin" aria-hidden="true"></span>LinkedIn</li>
+                                        <li><span class="fa fa-instagram" aria-hidden="true"></span>Instagram</li>
+                                        <li aria-label="X"><span class="nevora-x-icon" aria-hidden="true">X</span></li>
+                                    </ul>
+                                </aside>
+                            </div>
+                            <div class="column dt-sc-one-third">
+                                <aside class="widget mailchimp">
+                                    <h3 class="widget-title">Newsletter <span class="wlast">Subscription</span><span class="small-line"></span></h3>
+                                    <p>Stay connected for occasional updates about our projects, software innovations, technology insights, and digital solutions for growing businesses.</p>
+                                    <form method="post" class="mailchimp-form" name="frmNewsletter" action="mailto:bahatilusabe@gmail.com" enctype="text/plain">
+                                        <p><span class="fa fa-envelope"></span><input type="email" placeholder="Enter your email address" aria-label="Enter your email address" name="email" value="" required/><input type="submit" name="submit" class="dt-sc-button" value="Subscribe"/></p>
+                                    </form>
+                                    <p class="nevora-newsletter-note">Your email app will open to send your subscription request. We respect your privacy; you can unsubscribe at any time.</p>
+                                    <div id="ajax_newsletter_msg"></div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- **footer-widgets-wrapper - End** -->
+                    <div class="copyright">
+                        <div class="container">
+                            <p>NEVORA Technologies, &copy;2026. All rights reserved.
+</p>
+<ul class="footer-links">
+    <li>
+        <a href="index.html">Home</a>
+        |
+    </li>
+    <li>
+        <a href="about-us.html">About</a>
+        |
+    </li>
+    <li>
+        <a href="software-solutions.html">Software</a>
+        |
+    </li>
+    <li>
+        <a href="web-design-development.html">Web</a>
+        |
+    </li>
+    <li>
+        <a href="corporate-identity-design.html">Branding</a>
+        |
+    </li>
+    <li>
+        <a href="contact.html">Contact</a>
+    </li>
+</ul>
+</div></div></footer>
+<!-- **Footer - End** -->
+</div>
+<!-- **inner-wrapper - End** -->
+</div>
+<!-- **Wrapper - End** -->
+<!-- **jQuery** -->
+<!-- **Sticky Nav** -->
+<!-- Style Picker Starts -->
+<!-- Style Picker ends -->
+<!-- **To Top** -->
+<a href="contact.html" class="float">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>
+<style>
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 10px;
+        left: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
+</style>
+<script>
+    (() => {
+        const slider = document.querySelector("[data-home-slider]");
+        if (!slider) return;
+
+        const slides = Array.from(slider.querySelectorAll("[data-home-slide]"));
+        const dots = Array.from(slider.querySelectorAll("[data-slide-to]"));
+        const pauseButton = slider.querySelector("[data-pause]");
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let activeIndex = 0;
+        let timerId;
+        let rotationEnabled = !reducedMotion.matches;
+        let pointerInside = false;
+        let focusInside = false;
+
+        const updateRotation = () => {
+            window.clearInterval(timerId);
+            if (!rotationEnabled || pointerInside || focusInside || document.hidden) return;
+            timerId = window.setInterval(() => showSlide(activeIndex + 1), 10000);
+        };
+
+        const updatePauseButton = () => {
+            pauseButton.textContent = rotationEnabled ? "Pause" : "Play";
+            pauseButton.setAttribute("aria-pressed", String(!rotationEnabled));
+            pauseButton.setAttribute(
+                "aria-label",
+                rotationEnabled ? "Pause automatic slide rotation" : "Start automatic slide rotation"
+            );
+        };
+
+        const showSlide = (nextIndex) => {
+            activeIndex = (nextIndex + slides.length) % slides.length;
+            slides.forEach((slide, index) => {
+                const isActive = index === activeIndex;
+                slide.classList.toggle("is-active", isActive);
+                slide.setAttribute("aria-hidden", String(!isActive));
+            });
+            dots.forEach((dot, index) => {
+                dot.setAttribute("aria-current", String(index === activeIndex));
+            });
+            updateRotation();
+        };
+
+        slider.querySelector("[data-previous]").addEventListener("click", () => showSlide(activeIndex - 1));
+        slider.querySelector("[data-next]").addEventListener("click", () => showSlide(activeIndex + 1));
+        dots.forEach((dot) => {
+            dot.addEventListener("click", () => showSlide(Number(dot.dataset.slideTo)));
+        });
+        pauseButton.addEventListener("click", () => {
+            rotationEnabled = !rotationEnabled;
+            if (rotationEnabled) pointerInside = false;
+            updatePauseButton();
+            updateRotation();
+        });
+        slider.addEventListener("pointerenter", () => {
+            pointerInside = true;
+            updateRotation();
+        });
+        slider.addEventListener("pointerleave", () => {
+            pointerInside = false;
+            updateRotation();
+        });
+        slider.addEventListener("focusin", () => {
+            focusInside = true;
+            updateRotation();
+        });
+        slider.addEventListener("focusout", (event) => {
+            if (event.relatedTarget && slider.contains(event.relatedTarget)) return;
+            window.setTimeout(() => {
+                focusInside = slider.contains(document.activeElement);
+                updateRotation();
+            }, 0);
+        });
+        document.addEventListener("visibilitychange", updateRotation);
+        reducedMotion.addEventListener?.("change", (event) => {
+            if (event.matches) {
+                rotationEnabled = false;
+                updatePauseButton();
+            }
+            updateRotation();
+        });
+
+        updatePauseButton();
+        updateRotation();
+    })();
+</script>
+<script>
+    (() => {
+        const viewport = document.querySelector("[data-projects-viewport]");
+        if (!viewport) return;
+
+        const previousButton = document.querySelector("[data-projects-previous]");
+        const nextButton = document.querySelector("[data-projects-next]");
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+        const updateControls = () => {
+            const maxScrollLeft = viewport.scrollWidth - viewport.clientWidth;
+            previousButton.disabled = viewport.scrollLeft <= 1;
+            nextButton.disabled = viewport.scrollLeft >= maxScrollLeft - 1;
+        };
+
+        const scrollProjects = (direction) => {
+            viewport.scrollBy({
+                left: direction * viewport.clientWidth * 0.85,
+                behavior: reducedMotion.matches ? "auto" : "smooth"
+            });
+        };
+
+        previousButton.addEventListener("click", () => scrollProjects(-1));
+        nextButton.addEventListener("click", () => scrollProjects(1));
+        viewport.addEventListener("scroll", updateControls, { passive: true });
+        window.addEventListener("resize", updateControls);
+        updateControls();
+    })();
+</script>
+<script src="js/nevora-whatsapp.js"></script>
+</body></html>
